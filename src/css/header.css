@@ -1,0 +1,9 @@
+.header-container {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  flex-direction: row;
+}
+.header-logo {
+  display: block;
+}
