@@ -7,7 +7,7 @@
 .benefits-header {
   font-weight: 600;
   font-size: 16px;
-  line-height: 1.5%;
+  line-height: 1.5;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: rgba(250, 250, 250, 0.4);
@@ -18,6 +18,7 @@
 .benefits-list {
   width: 344px;
   height: 1128px;
+  margin-bottom: 32px;
 }
 
 .benefits-item {
@@ -26,21 +27,38 @@
   width: 344px;
   height: 270px;
   background-color: #242527;
+  margin-bottom: 16px;
 }
 
 .item-header {
   font-weight: 600;
   font-size: 20px;
-  line-height: 1.5%;
+  line-height: 1.5;
   letter-spacing: -0.02em;
   color: var(--white-text-color);
   margin-bottom: 8px;
+  margin-top: 64px;
 }
 
 .item-description {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5%;
+  line-height: 1.5;
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.6);
+}
+
+.btn-order {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 18px 36px;
+  width: 187px;
+  height: 55px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: var(--white-text-color);
+  background-color: transparent;
+  text-align: left;
+  text-wrap: nowrap;
 }
