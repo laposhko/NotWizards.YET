@@ -32,8 +32,8 @@
 
 .container {
   width: 100%;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -47,6 +47,8 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
