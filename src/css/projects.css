@@ -1,6 +1,7 @@
 .projects {
   background-color: #1c1d20;
-  padding-top: 56px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .projects-container {
   display: flex;
@@ -118,4 +119,13 @@
   stroke: #3b3b3b;
   border: 1px solid #3b3b3b;
   cursor: default;
+}
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 704px;
+  }
 }
