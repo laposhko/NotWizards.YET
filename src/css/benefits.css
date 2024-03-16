@@ -3,6 +3,7 @@
 .benefits-container {
   padding-top: 64px;
   padding-bottom: 32px;
+  width: 343px;
 }
 
 .benefits-header {
@@ -17,7 +18,6 @@
 }
 
 .benefits-list {
-  width: 343px;
   margin-bottom: 32px;
 }
 
@@ -25,7 +25,7 @@
   border-radius: 20px;
   width: 343px;
   height: 270px;
-  background-color: #242527;
+  background-color: var(--cards-background-color);
   margin-bottom: 16px;
   padding: 24px;
 }
@@ -35,7 +35,7 @@
 }
 @keyframes shake {
   0% {
-    background-color: #450306;
+    background-color: rgb(69, 3, 6);
     transform: translate(5px, 5px);
   }
   10% {
@@ -88,12 +88,12 @@
   text-wrap: nowrap;
 }
 .btn-order:hover {
-  background-color: #ed3b44;
+  background-color: var(--accent-color);
 }
 .square-icon {
   height: 48px;
   width: 48px;
-  background-color: #ed3b44;
+  background-color: var(--accent-color);
   border-radius: 10px;
   display: flex;
   align-items: center;
