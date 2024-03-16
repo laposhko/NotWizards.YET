@@ -10,6 +10,7 @@
 @import url('./covers.css');
 @import url('./workTogether.css'); */
 
+@import url(./reviews.css);
 :root {
   --white-text-color: #fafafa;
   --arrow-color: #3b3b3b;
