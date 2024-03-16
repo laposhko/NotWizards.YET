@@ -1,8 +1,29 @@
 <section class="about-section">
     <h2 hidden>About</h2>
+    <div class="container pictures-container">
+        <ul class="pictures-about">
+           <li class="main-about-block">
+            <p class="main-about-info"> 
+                I work with people all over the world to create impressive and <span class="functional-word">functional</span><span class="website-word"> websites</span> that reflect each client's unique
+                personality.
+            </p>
+           </li>
+           <li class="main-about-block">
+            <img  class="my-photo" srcset="
+                ./img/mobile-about.png 343w,
+                ./img/tablet-about.png 704w,
+                ./img/desktop-about.png 680w,
+                ./img/mobile-about@2x.png 686w,
+                ./img/tablet-about@2x.png 1408w,
+                ./img/desktop-about@2x.png 1360w"
+                sizes="(min-width: 1440px) 680px, (min-width: 768px) 704px, (max-width: 767px) 343px" src="../img/desktop-about.png"
+                alt="me" />
+           </li>
+        </ul>
+    </div>
     <div class="container container-about">
         <ul>
-            <li>
+            <li class="about-description-info">
                 <h3 class="about-header">About me</h3>
                 <p>
                     <br> I am Lloyd Jefferson, a talented programmer with extensive expertise in software development. I have an understanding of
@@ -15,29 +36,56 @@
                     technologies and practices to stay abreast of the latest innovations. I have a strong understanding of various
                     programming languages, frameworks and architectural concepts that allow me to create efficient and scalable software.<br>
                </p>
-               <button class="toggle"></button>
+                <button class="toggle-up" type="button">
+                    <svg class="arrow-narrow-right" width="20" height="20">
+                        <use href="../img/symbol-defs.svg#icon-arrow-up"></use>
+                    </svg>
+                </button>
+                <button class="toggle-down" type="button">
+                    <svg class="arrow-narrow-right" width="20" height="20">
+                        <use href="../img/symbol-defs.svg#icon-arrow-down"></use>
+                    </svg>
+                </button>
             </li>
-            <li>
+            <li class="about-description-info">
                 <h3 class="about-header">Role</h3>
                 <p>
                     <br>Frontend development<br>
                     <br>HeadlessCMS,Wordpress<br>
                     <br>Blender(enjoy)<br>
                 </p>
-                <button class="toggle"></button>
+                <button class="toggle-up" type="button">
+                    <svg class="arrow-narrow-right" width="20" height="20">
+                        <use href="../img/symbol-defs.svg#icon-arrow-up"></use>
+                    </svg>
+                </button>
+                <button class="toggle-down" type="button">
+                    <svg class="arrow-narrow-right" width="20" height="20">
+                        <use href="../img/symbol-defs.svg#icon-arrow-down"></use>
+                    </svg>
+                </button>
             </li>
-            <li>
+            <li class="about-description-info"> 
                 <h3 class="about-header">Education</h3>
                 <p>
                     <br>2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York<br>
                     <br>2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York<br>
                     <br>2020 - 2022 / Advanced Blender Animation Techniques, Udemy<br>
                 </p>
-                <button class="toggle"></button>
+                <button class="toggle-up" type="button">
+                <svg class="arrow-narrow-right" width="20" height="20">
+                    <use href="../img/symbol-defs.svg#icon-arrow-up"></use>
+                </svg>
+                </button>
+                <button class="toggle-down" type="button">
+                <svg class="arrow-narrow-right" width="20" height="20">
+                    <use href="../img/symbol-defs.svg#icon-arrow-down"></use>
+                </svg>
+                </button>
             </li>
         </ul>
     </div>
-    <div class="skills">
+    <div class="container skills">
         <ul class="skills-circles">
             <li class="circle-btn"><h3 class="skill-name">HTML/CSS</h3></li>
             <li class="circle-btn"><h3 class="skill-name">JavaScript</h3></li>
@@ -46,6 +94,10 @@
             <li class="circle-btn"><h3 class="skill-name">React Native</h3></li>
             <li class="circle-btn"><h3 class="skill-name">Soft Skills</h3></li>
         </ul>
-        <button class="button"></button> 
+        <button class="switch-right" type="button">
+            <svg class="icon-arrow-narrow-right" width="40" height="40">
+                <use href="../img/symbol-defs.svg#icon-arrow-narrow-right"></use>
+            </svg>
+        </button> 
     </div>
 </section>
