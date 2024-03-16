@@ -1,0 +1,45 @@
+/* Mobile styles */
+
+.reviews {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.review-title {
+  color: #fafafa66;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+}
+
+.review-list {
+  margin-bottom: 32px;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.rounded-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 52px;
+  height: 52px;
+  border: 1px solid #fafafa80;
+  padding: 14px;
+  border-radius: 60%;
+  cursor: pointer;
+}
+
+.arrow-item {
+  width: 24px;
+  height: 24px;
+  stroke: #fafafa;
+}
