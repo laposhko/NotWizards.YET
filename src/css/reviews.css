@@ -18,6 +18,40 @@
   margin-bottom: 32px;
 }
 
+.review-item {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 20px;
+  padding: 32px 24px;
+}
+
+.review-avatar-container {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 32px;
+}
+
+.review-avatar {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.review-author-name {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.review-author-text {
+  color: #fafafa99;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+
 .arrow-container {
   display: flex;
   justify-content: center;
