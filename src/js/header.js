@@ -30,3 +30,18 @@ for (const anchor of anchors) {
     });
   });
 }
+
+const mobAnchors = document.querySelectorAll('.mobmenu-link');
+console.log(mobAnchors);
+for (const anchor of mobAnchors) {
+  anchor.addEventListener('click', event => {
+    event.preventDefault();
+    const blockID = anchor.getAttribute('href');
+    const wishedSection = document.getElementById(blockID);
+    wishedSection.scrollIntoView({
+      behavior: 'smooth',
+    });
+    backdrop.classList.remove('backdrop--show');
+    backdrop.classList.add('backdrop--hide');
+  });
+}
