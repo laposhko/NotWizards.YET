@@ -1,18 +1,54 @@
 <header class="header">
   <div class="header-container container">
-    <a href="/" class="header-logo">
-      <img class="header-logo-img" src="../img/logo.png" alt="portrait" />
-      jefferson</a
+    <!-- logo -->
+    <a href="/index.html" class="header-logo">
+      <picture>
+        <source
+          srcset="../img/header-logo.png 1x, ../img/header-logo@2x.png 2x"
+        />
+        <img
+          class="header-logo-img"
+          src="../img/header-logo.png"
+          alt="portrait"
+        />
+      </picture>
+
+      jefferson*</a
     >
+    <!-- navigation -->
     <nav class="header-nav">
       <button class="menu-btn">Menu</button>
       <ul class="header-menu visually-hidden">
-        <li><a href="">About me</a></li>
-        <li><a href="">Benefits</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">FAQ</a></li>
+        <li><a class="header-menu-link" href="about">About me</a></li>
+        <li><a class="header-menu-link" href="">Benefits</a></li>
+        <li><a class="header-menu-link" href="">Projects</a></li>
+        <li><a class="header-menu-link" href="">FAQ</a></li>
       </ul>
     </nav>
-    <a href="" class="header-btn">Order the Project</a>
+    <!-- order button -->
+    <a href="" class="header-order">Order the Project</a>
+    <!-- mob menu btn -->
+    <button class="header-btn">
+      <svg width="28px" height="28px">
+        <use href="../img/symbol-defs.svg#icon-mobile-menu-burger"></use>
+      </svg>
+    </button>
+  </div>
+  <!-- mob menu -->
+  <div class="backdrop">
+    <div class="mobmenu container">
+      <button class="mobmenu__close">
+        <svg width="28px" height="28px">
+          <use href="../img/symbol-defs.svg#icon-x"></use>
+        </svg>
+      </button>
+      <ul class="mobmenu-list">
+        <li class="mobmenu-item"><a href="">About me</a></li>
+        <li class="mobmenu-item"><a href="">Benefits</a></li>
+        <li class="mobmenu-item"><a href="">Projects</a></li>
+        <li class="mobmenu-item"><a href="">FAQ</a></li>
+      </ul>
+      <a href="" class="mobmenu-order">Order the project</a>
+    </div>
   </div>
 </header>

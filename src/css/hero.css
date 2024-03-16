@@ -1,0 +1,41 @@
+.hero {
+  position: relative;
+}
+.hero-title {
+  padding-top: 281px;
+  font-family: Inter Tight;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: #fafafa;
+  width: 343px;
+}
+
+.contacts {
+  display: flex;
+  gap: 0 4px;
+  padding: 212px 0 32px 0;
+  width: 342px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    padding-top: 300px;
+    font-size: 90px;
+    width: 632px;
+  }
+  .contacts {
+    gap: 0 7px;
+    justify-content: end;
+    width: 475px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-title {
+    margin: 0 auto;
+    width: 1084px;
+  }
+}
