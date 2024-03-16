@@ -1,8 +1,9 @@
 @import url('./reset.css');
 @import url('./header.css');
-
-/* @import url('./hero.css');
+@import url('./hero.css');
 @import url('./about.css');
+
+/*
 @import url('./benefits.css');
 @import url('./projects.css');
 @import url('./faq.css');
@@ -11,10 +12,10 @@
 
 :root {
   --white-text-color: #fafafa;
-  --dark-text-color: #1c1d20;
+  --arrow-color: #3b3b3b;
   --accent-color: #ed3b44;
-  --background-color: #242527;
-  --light-background-color: #3b3b3b;
+  --background-color: #1c1d20;
+  --cards-background-color: #242527;
 }
 
 .visually-hidden {
@@ -32,8 +33,8 @@
 
 .container {
   width: 100%;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -47,6 +48,8 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
