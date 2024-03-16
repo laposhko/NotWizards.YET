@@ -1,3 +1,55 @@
-.covers-list-item {
-    transform: rotate(17deg);
+.covers {
+    background-image: linear-gradient(
+        rgba(217, 217, 217, 0.04),
+        rgba(217, 217, 217, 0.04)
+    ), 
+    url(../img/covers/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(217, 217, 217, 0.04);    
 }
+
+.content {
+    position: relative;
+    height: 960px;
+    overflow: hidden; 
+}
+   
+.covers-list {
+    position: absolute;
+    top: -420px;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.covers-list-item {
+    margin-bottom: 48px;
+}
+
+.covers-image-thumb {
+    display: flex;
+    gap: 48px;
+    transform: rotate(16deg);  
+}
+
+.covers-image {
+    width: 544px;
+    height: 314px;
+    animation-name: coversLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes coversLine {
+    from {
+      transform: translateX(-20%);
+    }
+    
+    to {
+      transform: translateX(-180%);
+    }
+  }
