@@ -28,11 +28,11 @@ for (const anchor of anchors) {
     wishedSection.scrollIntoView({
       behavior: 'smooth',
     });
+    headerMenu.classList.toggle('visually-hidden');
   });
 }
 
 const mobAnchors = document.querySelectorAll('.mobmenu-link');
-console.log(mobAnchors);
 for (const anchor of mobAnchors) {
   anchor.addEventListener('click', event => {
     event.preventDefault();
