@@ -1,9 +1,27 @@
 .hero {
   position: relative;
+  /* margin: 281px 0  auto; */
+  margin-top:281px ;
+  margin-bottom:32px ;
+  /* width: 100%; */
 }
+
+.hero-background-gra{
+  background-image: url(../img/Glass-desktop.png) left no-repeat ,linear-gradient(to right, #ed3b44, #1c1d20);
+ 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
+}
+
+/* .hero-background-glass{
+  background-image: url(../img/Glass-desktop.png); 
+  background-position: left;
+} */
+
 .hero-title {
-  padding-top: 281px;
-  font-family: Inter Tight;
+  text-transform: uppercase;
+  /* margin-top: 281px; */
   font-weight: 500;
   font-size: 50px;
   line-height: 1;
@@ -15,22 +33,42 @@
 .contacts {
   display: flex;
   gap: 0 4px;
-  padding: 212px 0 32px 0;
+  /* margin: 212px auto 32px auto; */
+  margin-top: 212px;
+  padding-right: 17px; ;
   width: 342px;
-  justify-content: center;
+}
+
+li.contacts-list {
+  width: 37px;
+  height: 37px;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  padding: 10px 12px;
+}
+
+li.mail {
+  width: 178px;
+  border-radius: 60px;
 }
 
 @media screen and (min-width: 768px) {
   .hero-title {
-    padding-top: 300px;
+    margin-top: 300px;
     font-size: 90px;
     width: 632px;
   }
+
   .contacts {
     gap: 0 7px;
-    justify-content: end;
-    width: 475px;
+    margin:187px 0 32px auto;
+  
   }
+
+  /* li.contacts-list{
+    width: 37px;
+    height: 37px;
+  } */
 }
 
 @media screen and (min-width: 1440px) {
