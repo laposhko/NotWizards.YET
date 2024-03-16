@@ -41,13 +41,13 @@
 
 @media screen and (min-width: 375px) {
   .container {
-    width: 343px;
+    width: 375px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 704px;
+    width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -55,6 +55,6 @@
 
 @media screen and (min-width: 1440px) {
   .container {
-    width: 1376px;
+    width: 1440px;
   }
 }
