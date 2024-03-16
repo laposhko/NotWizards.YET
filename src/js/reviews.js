@@ -14,7 +14,7 @@ function createElement(array) {
     .map(({ author, avatar_url, review }) => {
       return `<li class="review-item">
         <div class="review-avatar-container">
-            <img class="review-avatar" url="${avatar_url}" alt="author avatar"/>
+            <img class="review-avatar" src="${avatar_url}" alt="author avatar"/>
         </div>
         <p class="review-author-name">${author}</p>
         <p class="review-author-text">${review}</p>
