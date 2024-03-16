@@ -1,23 +1,12 @@
 .hero {
   position: relative;
-  /* margin: 281px 0  auto; */
-  margin-top:281px ;
-  margin-bottom:32px ;
-  /* width: 100%; */
-}
-
-.hero-background-gra{
-  background-image: url(../img/Glass-desktop.png) left no-repeat ,linear-gradient(to right, #ed3b44, #1c1d20);
- 
+  padding-top: 281px;
+  padding-bottom: 32px;
+  background-image: url(../img/Glass-desktop.png), linear-gradient(to left, #1C1D20, #69292d, #ed3b44);
+  background-size: 82.7% 100%, 100% 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  
 }
-
-/* .hero-background-glass{
-  background-image: url(../img/Glass-desktop.png); 
-  background-position: left;
-} */
 
 .hero-title {
   text-transform: uppercase;
@@ -35,7 +24,7 @@
   gap: 0 4px;
   /* margin: 212px auto 32px auto; */
   margin-top: 212px;
-  padding-right: 17px; ;
+  padding-right: 17px;
   width: 342px;
 }
 
@@ -61,8 +50,7 @@ li.mail {
 
   .contacts {
     gap: 0 7px;
-    margin:187px 0 32px auto;
-  
+    margin: 187px 0 32px auto;
   }
 
   /* li.contacts-list{
