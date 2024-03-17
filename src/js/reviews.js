@@ -9,7 +9,6 @@ const btnContainer = document.querySelector('.review-buttons-wrapper');
 
 async function getData() {
   const responce = await axios.get(url);
-  console.log(responce);
   return responce.data;
 }
 
