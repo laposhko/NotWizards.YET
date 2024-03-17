@@ -93,6 +93,9 @@
     align-items: center;
   }
 }
+.header-btn-icon {
+  stroke: #e0373f;
+}
 @media screen and (min-width: 768px) {
   .header-btn {
     display: none;
@@ -133,13 +136,12 @@
 }
 
 .mobmenu__close {
-  color: red;
   position: absolute;
   top: 30px;
   right: 30px;
 }
-.mobmenu-close-icon path {
-  fill: #e0373f;
+.mobmenu-close-icon {
+  stroke: red;
 }
 /* .mobmenu-close-icon:hover {
   fill: currentColor;
