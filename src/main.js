@@ -1,8 +1,7 @@
-// create your functions in separate .js files in js folder and import here
-
-// header menu dropdown
-const menuBtn = document.querySelector('.menu-btn');
-const headerMenu = document.querySelector('.header-menu');
-menuBtn.addEventListener('click', () => {
-  headerMenu.classList.toggle('visually-hidden');
-});
+import './js/header';
+import './js/about';
+import './js/benefits';
+import './js/reviews';
+import './js/projects';
+import './js/faq';
+import './js/workTogether';
