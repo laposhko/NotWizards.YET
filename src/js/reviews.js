@@ -1,13 +1,13 @@
 import axios from 'axios';
-
-// Завдання 1 - Розібратися з svg іконками
-// Завдання 2 - Переглянути, чому не завантажуються зображення користувачів
-// Завдання 3 - Додати бібліотеку для прокрутки відгуків
-// Завдання 4 - Встановити пагінацію
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 const url = 'https://portfolio-js.b.goit.study/api/reviews';
 const list = document.querySelector('.review-list');
-let totalElement;
-let currentPage = 1;
+
+Swiper.use([Navigation, Pagination]);
 
 function createElement(array) {
   const markup = array
@@ -33,5 +33,26 @@ async function getData() {
 getData()
   .then(array => {
     createElement(array);
+    const swiper = new Swiper('.swiper', {
+      modules: [Pagination, Navigation],
+      updateOnWindowResize: true,
+      speed: 400,
+      direction: 'horizontal',
+      slidesPerView: 1,
+      enabled: true,
+      swipeHandler: '.review-item',
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          slidesPerGroup: 1,
+          spaceBetween: 16,
+        },
+        1440: {
+          slidesPerView: 4,
+          slidesPerGroup: 1,
+          spaceBetween: 16,
+        },
+      },
+    });
   })
   .catch(error => console.log(error));

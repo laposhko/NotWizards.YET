@@ -15,10 +15,13 @@
 }
 
 .review-list {
+  display: flex;
   margin-bottom: 32px;
 }
 
 .review-item {
+  width: 343px;
+  min-height: 302px;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
   padding: 32px 24px;
@@ -62,8 +65,8 @@
 .rounded-container {
   display: flex;
   justify-content: center;
+
   align-items: center;
-  background-color: transparent;
   width: 52px;
   height: 52px;
   border: 1px solid #fafafa80;
@@ -76,4 +79,10 @@
   width: 24px;
   height: 24px;
   stroke: #fafafa;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1140px) {
 }
