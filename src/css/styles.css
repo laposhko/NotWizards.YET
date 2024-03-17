@@ -5,11 +5,12 @@
 @import url('./benefits.css');
 @import url('./covers.css');
 @import url(./reviews.css);
+@import url('./workTogether.css');
 
 /*
 @import url('./projects.css');
 @import url('./faq.css');
-@import url('./workTogether.css'); */
+ */
 
 :root {
   --white-text-color: #fafafa;
