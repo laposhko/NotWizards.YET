@@ -94,7 +94,10 @@
   }
 }
 .header-btn-icon {
-  stroke: #e0373f;
+  stroke: var(--white-text-color);
+}
+.header-btn-icon:hover {
+  stroke: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
   .header-btn {
@@ -141,11 +144,11 @@
   right: 30px;
 }
 .mobmenu-close-icon {
-  stroke: red;
+  stroke: var(--white-text-color);
 }
-/* .mobmenu-close-icon:hover {
-  fill: currentColor;
-} */
+.mobmenu-close-icon:hover {
+  stroke: var(--accent-color);
+}
 .mobmenu-list {
   display: flex;
   flex-direction: column;
