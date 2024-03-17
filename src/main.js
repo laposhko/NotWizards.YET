@@ -1,1 +1,7 @@
-// create your functions in separate .js files in js folder and import here
+import './js/header';
+import './js/about';
+import './js/benefits';
+import './js/reviews';
+import './js/projects';
+import './js/faq';
+import './js/workTogether';

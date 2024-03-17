@@ -1,6 +1,60 @@
 <header class="header">
   <div class="header-container container">
-    <a href="/" class="header-logo">jefferson</a>
-    <nav class="header-nav">Menu</nav>
+    <!-- logo -->
+    <a href="index.html" class="header-logo">
+      <picture>
+        <source
+          srcset="./img/header-logo.png 1x, ./img/header-logo@2x.png 2x"
+        />
+        <img
+          class="header-logo-img"
+          src="./img/header-logo.png"
+          alt="portrait"
+        />
+      </picture>
+
+      jefferson*</a
+    >
+    <!-- navigation -->
+    <nav class="header-nav">
+      <button class="menu-btn">Menu</button>
+      <ul class="header-menu visually-hidden">
+        <li><a class="header-menu-link" href="about">About me</a></li>
+        <li><a class="header-menu-link" href="benefits">Benefits</a></li>
+        <li><a class="header-menu-link" href="projects">Projects</a></li>
+        <li><a class="header-menu-link" href="faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <!-- order button -->
+    <a href="" class="header-order">Order the Project</a>
+    <!-- mob menu btn -->
+    <button class="header-btn">
+      <svg width="28px" height="28px">
+        <use href="./img/symbol-defs.svg#icon-mobile-menu-burger"></use>
+      </svg>
+    </button>
+  </div>
+  <!-- mob menu -->
+  <div class="backdrop">
+    <div class="mobmenu container">
+      <button class="mobmenu__close">
+        <svg width="28px" height="28px">
+          <use href="./img/symbol-defs.svg#icon-x"></use>
+        </svg>
+      </button>
+      <ul class="mobmenu-list">
+        <li class="mobmenu-item">
+          <a class="mobmenu-link" href="about">About me</a>
+        </li>
+        <li class="mobmenu-item">
+          <a class="mobmenu-link" href="benefits">Benefits</a>
+        </li>
+        <li class="mobmenu-item">
+          <a class="mobmenu-link" href="projects">Projects</a>
+        </li>
+        <li class="mobmenu-item"><a class="mobmenu-link" href="faq">FAQ</a></li>
+      </ul>
+      <a href="" class="mobmenu-order">Order the project</a>
+    </div>
   </div>
 </header>

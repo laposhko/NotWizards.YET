@@ -1,9 +1,141 @@
+.header {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  background-color: transparent;
+}
 .header-container {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
-  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .header-logo {
-  display: block;
+  display: flex;
 }
+.header-logo-img {
+  margin-right: 5px;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  width: 80px;
+  align-items: center;
+  position: relative;
+}
+.menu-btn {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: block;
+    color: inherit;
+    border-bottom: 1px solid;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}
+.header-menu {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-menu {
+    position: absolute;
+    top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+/* .header-menu li {
+  display: block;
+} */
+.header-order {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-order {
+    background-color: var(--accent-color);
+    border-radius: 60px;
+    width: 163px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-btn {
+    display: none;
+  }
+}
+
+/* mob menu */
+.backdrop {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/mobmenu-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: -100%;
+  transition: right 0.5s ease;
+}
+.backdrop--show {
+  right: 0;
+}
+.backdrop--hide {
+  right: -100%;
+}
+.mobmenu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 60px;
+  /* Apply transition to right property */
+}
+
+.mobmenu__close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.mobmenu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.mobmenu-item {
+  border-bottom: 1px solid;
+}
+.mobmenu-order {
+  background-color: var(--accent-color);
+  border-radius: 60px;
+  width: 163px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+} */
