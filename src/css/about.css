@@ -1,9 +1,29 @@
 .about-section {
-    padding-top: 48px;
+    padding-top: 96px;
     padding-bottom: 82px;
     background-color: #1C1D20;
     color: #FAFAFA;
 }
+
+
+ /* ---MOBILE STYLES---- */
+ /* @media screen and (min-width:320px) {
+ .container {
+     max-width:375px
+ }
+
+.skills-swiper-wrapper .skill-slide{
+    width: 130px;
+    height: 130px;
+ }
+
+.skills-conatiner {
+    overflow: hidden;
+    width: 260px;
+}
+
+} */
+
 
 .container-about {
     padding-top: 48px;
@@ -15,13 +35,22 @@
     gap: 16px;   
 }
 
+.main-about-block {
+    width: 680px;
+    height: 700px;
+    background-color: #242527;
+    border-radius: 24px;
+}
+
 .main-about-block:first-child {
     padding-top: 64px;
     padding-left: 64px;
     padding-right: 64px;
+}
+
+.my-photo {
     width: 680px;
-    background-color: #242527;
-    border-radius: 24px;
+    height: 700px;
 }
 
 .main-about-info {
@@ -37,29 +66,23 @@
     color: rgba(250, 250, 250, 0.4);
 }
 
-.my-picture {
-    width: 680px;
-    height: 700px;
+.accordion-element:not(:first-child){
+    margin-top: 32px;
 }
 
-.about-header {
+.accordion-title {
+    position: relative;
     line-height: 1.5;
     letter-spacing: -0.2;
     text-transform: uppercase;
     color: rgba(250, 250, 250, 0.4);
 }
 
-.about-description-info::after {
-  content: "";
-  display: block;
-  width: 100%;
-  margin-top: 32px;
-  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 2px;
-}
-
-.toggle-up,
-.toggle-down {
+.accordion-title .arrow {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,20 +96,41 @@
     cursor: pointer;
 }
 
-.skills {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 96px;
+.accordion-description {
+    height: 0;
+    margin-top: 8px;
+    gap: 10px;
+    padding-left: 696px;
+    padding-right: 68px;
+    overflow: hidden;
+    transition: height 300ms ease;
 }
 
-.skills-circles {
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
+.accordion-description.active {
+   height: auto;
 }
 
-.circle-btn {
+.accordion-element::after {
+  content: "";
+  display: block;
+  width: 100%;
+  margin-top: 32px;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 2px;
+}
+
+.swiper-container {
+    padding-top: 96px;
+    position: relative;
+}
+
+.skills-container {
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+}
+
+.skills-swiper-wrapper .skill-slide {
     display: flex;
     width: 200px;
     height: 200px;
@@ -98,32 +142,29 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.circle-btn:hover {
+.skills-swiper-wrapper .skill-slide:hover {
     background-color: #ED3B44;
     border-color: transparent;
 }
 
-.switch-right {
+.swiper-button-next {
     display: flex;
-    width: 50px;
-    height: 50px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    top: 67%;
+    transform: translateY(-50%);
     align-items: center;
     justify-content: center;
     background-color: transparent;
     border: transparent;
-    border-radius: 50%;
     cursor: pointer;
-    margin-left: 72px;
-    margin-right: 32px;
-    padding: 0;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),border 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-}
-.switch-right:hover {
-    /* border-color: rgba(250, 250, 250, 0.5); */
-    border: 1px solid rgba(250, 250, 250, 0.5);
+    z-index: 1;
 }
 
 .icon-arrow-narrow-right {
+    fill: none;
     stroke: #3B3B3B;
     transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -131,161 +172,3 @@
 .icon-arrow-narrow-right:hover{
     stroke: #FAFAFA
 }
-
-/* .header-box {
-     padding-top: 20px;
-     padding-bottom: 50px;
-     display: flex;
-     align-items: center;
- }
-
- .header-box {
-     justify-content: space-between;
- }
-
- .social-and-menu {
-     display: flex;
-     flex-wrap: nowrap;
- }
-
- .network-list {
-     display: flex;
-     gap: 12px;
- }
-
- .network-item {
-     width: 44px;
-     height: 44px;
-     border-radius: 15%;
- }
-
- .network-icon{
-     fill: #FCF9F9;
- }
-
- .network-link{
-     display: flex;
-     width: 100%;
-     height: 100%;
-     border-radius: 15%;
-     justify-content: center;
-     align-items: center;
-
-     background-color: rgba(252, 249, 249, 10%);
-     border: 1px solid rgba(252, 249, 249, 10%);
-     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
-
- .network-link:hover,
- .network-link:focus {
-     background-color: transparent;
-     border-color: #ECD979;
- }
-
- .mobile-open-button {
-     margin-left: 12px;
-     border: none;
-     background-color: transparent;
-     padding: 0;
-     line-height: 0;
- }
-
- .mobile-open-button-icon {
-    stroke: #ECD979;
- }
-
- /* ---MOBILE STYLES---- */
- /* @media screen and (min-width:320px) {
- .container {
-     max-width:375px
- }
-
- .header-nav,
- .address-header {
-     display: none;
- }
- }
-
- /* ---TABLET STYLES---- */
- /* @media screen and (min-width: 768px) {
- .container {
-     min-width: 768px;
- }
-
- .mobile-open-button {
-     margin-left: 20px;
- }
-
- } */
-
- /* ---DESKTOP STYLES---- */
- /* @media screen and (min-width: 1280px) {
-
- .container {
-     min-width: 1280px;
- }
-
- .header-nav {
-     display: flex;
- }
-
-  .header-list {
-     display:flex;
-     gap: 25px;
-     margin-left: 60px;
-     margin-bottom: 0;
-     margin-top: 0;
-     padding: 0;
- } 
-
- .header-link {
-     display: block;
-     font-style: inherit;
-     text-transform: uppercase;
-     font-style: normal;
-     line-height: 0.89;
-     letter-spacing: 0em;
-     color: #FCF9F9;
-
-     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
-
- .header-link:hover,
- .header-link:focus,
- .header-link:active {
-     color: #ECD979;
- }
-
- .address-header {
-     display: flex;
-     margin-left: auto;
-     padding: 14px 28px;
-     width: 193px;
-     height: 48px;
-     border: 1px solid rgba(252, 249, 249, 10%);
-     border-radius: 15px;
-
-     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
-
- .address {
-     font-style: normal;
-     font-size: 13.8px;
-     line-height: 1.43; 
-     letter-spacing: 0em;
-     color: #FCF9F9;
- }
-
- .address-header:hover,
- .address-header:focus {
-     border: 1px solid #ECD979;
- }
-
- .network-list {
-     margin-left: 20px;
- }
-
- .mobile-open-button {
-     display: none;
- }
- }  */

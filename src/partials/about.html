@@ -1,5 +1,5 @@
-<section class="about-section">
-    <div class="container">
+<section class="about-section" id="about">
+  <div class="container">
     <h2 hidden>About</h2>
     <div class="pictures-container">
         <ul class="pictures-about">
@@ -10,108 +10,109 @@
             </p>
            </li>
            <li class="main-about-block">
-            <img  class="my-photo" srcset="
-                ./img/mobile-about.png 343w,
-                ./img/tablet-about.png 704w,
-                ./img/desktop-about.png 680w,
-                ./img/mobile-about@2x.png 686w,
-                ./img/tablet-about@2x.png 1408w,
-                ./img/desktop-about@2x.png 1360w"
-                sizes="(min-width: 1440px) 680px, (min-width: 768px) 704px, (max-width: 767px) 343px" src="../img/desktop-about.png"
+            <img class="my-photo" srcset="
+                ./img/about/mobile-about.png 343w,
+                ./img/about/tablet-about.png 704w,
+                ./img/about/desktop-about.png 680w,
+                ./img/about/mobile-about@2x.png 686w,
+                ./img/about/tablet-about@2x.png 1408w,
+                ./img/about/desktop-about@2x.png 1360w"
+                sizes="(min-width: 1440px) 680px, (min-width: 768px) 704px, (max-width: 767px) 343px" src="./img/about/desktop-about.png"
                 alt="me" />
            </li>
         </ul>
     </div>
     <div class="container-about">
-        <ul>
-            <li class="about-description-info">
-                <h3 class="about-header">About me</h3>
-                <p>
-                    <br> I am Lloyd Jefferson, a talented programmer with extensive expertise in software development. I have an understanding of
+        <ul class="accordion-list">
+            <li class="accordion-element">
+                <div class="accordion-title">
+                <h3>About me</h3>
+                <button class="arrow" type="button">
+                    <svg class="arrow-down" width="20" height="20">
+                    <use href="../img/symbol-defs.svg#icon-arrow-down"></use>
+                    </svg>
+                </button>
+                </div>
+                <div class="accordion-description">
+                <p class="ac-text">
+                    I am Lloyd Jefferson, a talented programmer with extensive expertise in software development. I have an understanding of
                     different programming languages and technologies, always ready to improve my skills. I always follow the latest trends
                     and look for unconventional, creative solutions to problems. I have a high level of analytical skills and am able to
-                    effectively solve even the most difficult tasks encountered on the way.<br>
-                    <br> Able to work both independently and in a team. I can effectively cooperate with colleagues, exchanging ideas and finding
+                    effectively solve even the most difficult tasks encountered on the way.
+                </p>
+                <p class="ac-text">
+                   Able to work both independently and in a team. I can effectively cooperate with colleagues, exchanging ideas and finding
                     optimal solutions. Professional maturity allows you to calmly cope with challenges and stressful situations, while
                     maintaining a high quality of work. I am always looking for opportunities for self-improvement. I actively study new
                     technologies and practices to stay abreast of the latest innovations. I have a strong understanding of various
-                    programming languages, frameworks and architectural concepts that allow me to create efficient and scalable software.<br>
+                    programming languages, frameworks and architectural concepts that allow me to create efficient and scalable software.
                </p>
-                <button class="toggle-up" type="button">
-                    <svg class="arrow-narrow-right" width="20" height="20">
-                        <use href="../img/symbol-defs.svg#icon-arrow-up"></use>
-                    </svg>
-                </button>
-                <button class="toggle-down" type="button">
-                    <svg class="arrow-narrow-right" width="20" height="20">
-                        <use href="../img/symbol-defs.svg#icon-arrow-down"></use>
-                    </svg>
-                </button>
+            </div>
             </li>
-            <li class="about-description-info">
-                <h3 class="about-header">Role</h3>
-                <p>
-                    <br>Frontend development<br>
-                    <br>HeadlessCMS,Wordpress<br>
-                    <br>Blender(enjoy)<br>
-                </p>
-                <button class="toggle-up" type="button">
-                    <svg class="arrow-narrow-right" width="20" height="20">
-                        <use href="../img/symbol-defs.svg#icon-arrow-up"></use>
-                    </svg>
-                </button>
-                <button class="toggle-down" type="button">
-                    <svg class="arrow-narrow-right" width="20" height="20">
-                        <use href="../img/symbol-defs.svg#icon-arrow-down"></use>
-                    </svg>
-                </button>
+            <li class="accordion-element">
+                <div class="accordion-title">
+                <h3>Role
+                    <button class="arrow" type="button">
+                        <svg class="arrow-down" width="20" height="20">
+                            <use href="../img/symbol-defs.svg#icon-arrow-down"></use>
+                        </svg>
+                    </button>
+                </h3>
+                </div>
+                <div class="accordion-description">
+                <p class="ac-text">Frontend development</p>
+                <p class="ac-text">HeadlessCMS,Wordpress</p>
+                <p class="ac-text">Blender(enjoy)</p>
+                </div>
             </li>
-            <li class="about-description-info"> 
-                <h3 class="about-header">Education</h3>
-                <p>
-                    <br>2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York<br>
-                    <br>2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York<br>
-                    <br>2020 - 2022 / Advanced Blender Animation Techniques, Udemy<br>
-                </p>
-                <button class="toggle-up" type="button">
-                <svg class="arrow-narrow-right" width="20" height="20">
-                    <use href="../img/symbol-defs.svg#icon-arrow-up"></use>
-                </svg>
-                </button>
-                <button class="toggle-down" type="button">
-                <svg class="arrow-narrow-right" width="20" height="20">
-                    <use href="../img/symbol-defs.svg#icon-arrow-down"></use>
-                </svg>
-                </button>
+            <li class="accordion-element"> 
+                <div class="accordion-title">
+                <h3>Education
+                        <button class="arrow" type="button">
+                            <svg class="arrow-down" width="20" height="20">
+                            <use href="../img/symbol-defs.svg#icon-arrow-down"></use>
+                            </svg>
+                        </button>
+                </h3>
+                </div>
+                <div class="accordion-description">
+                   <p class="ac-text">2018 - 2019 / Frontend Development Diploma,   GoIT IT School, New York </p>
+                    <p class="ac-text">2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York </p>
+                    <p class="ac-text">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
+                </div>
             </li>
         </ul>
     </div>
-    <div class="skills">
-        <ul class="skills-circles">
-            <li class="circle-btn">
+    <div class="swiper-container">
+        <div class = "skills-container"> 
+          <ul class="skills-swiper-wrapper swiper-wrapper"> 
+            <li class="swiper-slide skill-slide">
                 <h3 class="skill-name">HTML/CSS</h3>
             </li>
-            <li class="circle-btn">
+            <li class="swiper-slide skill-slide">
                 <h3 class="skill-name">JavaScript</h3>
             </li>
-            <li class="circle-btn">
+            <li class="swiper-slide skill-slide">
                 <h3 class="skill-name">React</h3>
             </li>
-            <li class="circle-btn">
+            <li class="swiper-slide skill-slide">
                 <h3 class="skill-name">Node.js</h3>
             </li>
-            <li class="circle-btn">
+            <li class="swiper-slide skill-slide">
                 <h3 class="skill-name">React Native</h3>
             </li>
-            <li class="circle-btn">
+            <li class="swiper-slide skill-slide">
                 <h3 class="skill-name">Soft Skills</h3>
             </li>
-        </ul>
-        <button class="switch-right" type="button">
+          </ul>
+        </div>
+        <div class="swiper-button-next">
+          <button class="button-next" type="button">
             <svg class="icon-arrow-narrow-right" width="40" height="40">
                 <use href="../img/symbol-defs.svg#icon-arrow-narrow-right"></use>
             </svg>
-        </button> 
+          </button> 
+        </div>
     </div>
-    </div>
+  </div>
 </section>
