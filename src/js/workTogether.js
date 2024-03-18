@@ -58,6 +58,11 @@ const addNewUser = async (event) => {
         console.log(response.data)
         const inst = basicLightbox.create(
             `<div class="modal">
+            <button class="close-btn" type="button">
+              <svg class="close-btn-icon" width="22" height="22">
+                <use href="./img/symbol-defs#icon-x.svg"></use>
+              </svg> 
+            </button>
               <div class modal-message">
                 <h3 class="modal-title">${response.data.title}</h3>
                 <p class="modal-text">${response.data.message}</p>
@@ -70,9 +75,9 @@ const addNewUser = async (event) => {
         const inst = basicLightbox.create(
             `<div class="modal">
             <button class="close-btn" type="button">
-            <svg class="close-btn-icon" width="22" height="22">
-            <use href="../img/workTogether-img/sprite.svg"></use>
-          </svg> 
+              <svg class="close-btn-icon" width="22" height="22">
+                <use href="./img/symbol-defs#icon-x.svg"></use>
+              </svg> 
             </button>
              <div class "modal-message">
                <h3 class="modal-title">Oops...something went wrong</h3>
@@ -80,6 +85,10 @@ const addNewUser = async (event) => {
              </div>
           </div>`)
           inst.show()
+    }
+    finally {
+        form.reset();
+        textValid.classList.add('is-hidden')
     }
 }
 form.addEventListener ('submit', addNewUser);
