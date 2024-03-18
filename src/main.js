@@ -3,5 +3,5 @@ import './js/about';
 import './js/benefits';
 import './js/reviews';
 import './js/projects';
-import './js/___faq';
+import './js/faq';
 import './js/workTogether';
