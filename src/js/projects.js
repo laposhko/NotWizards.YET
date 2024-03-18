@@ -15,13 +15,6 @@ const swiper = new Swiper('.swiper', {
   allowTouchMove: true,
   EdgeSwipeDetection: true,
   EdgeSwipeThreshold: 10,
-  // touches: {
-  //   startX,
-  //   startY,
-  //   currentX,
-  //   currentY,
-  //   diff,
-  // },
   cubeEffect: {
     shadow: true,
     slideShadows: true,
