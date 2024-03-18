@@ -4,12 +4,17 @@
     <a href="index.html" class="header-logo">
       <picture>
         <source
-          srcset="./img/header-logo.png 1x, ./img/header-logo@2x.png 2x"
+          srcset="
+            ./img/header/header-logo.png    1x,
+            ./img/header/header-logo@2x.png 2x
+          "
         />
         <img
           class="header-logo-img"
-          src="./img/header-logo.png"
+          src="./img/header/header-logo.png"
           alt="portrait"
+          width="80px"
+          height="80px"
         />
       </picture>
 
@@ -19,10 +24,18 @@
     <nav class="header-nav">
       <button class="menu-btn">Menu</button>
       <ul class="header-menu visually-hidden">
-        <li><a class="header-menu-link" href="about">About me</a></li>
-        <li><a class="header-menu-link" href="benefits">Benefits</a></li>
-        <li><a class="header-menu-link" href="projects">Projects</a></li>
-        <li><a class="header-menu-link" href="faq">FAQ</a></li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="about">About me</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="benefits">Benefits</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="projects">Projects</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="faq">FAQ</a>
+        </li>
       </ul>
     </nav>
     <!-- order button -->
