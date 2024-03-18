@@ -4,7 +4,7 @@ import { Navigation, Keyboard, Mousewheel, EffectCube } from 'swiper/modules';
 import 'swiper/css/bundle';
 
 const swiper = new Swiper('.projects-swiper', {
-  modules: [Navigation, Keyboard, EffectCube, Mousewheel],
+  // modules: [Navigation, Keyboard, EffectCube, Mousewheel],
   direction: 'horizontal',
   slidesPerView: 1,
   spaceBetween: 100,
@@ -36,3 +36,4 @@ const swiper = new Swiper('.projects-swiper', {
     enabled: true,
   },
 });
+Swiper.use([Navigation]);
