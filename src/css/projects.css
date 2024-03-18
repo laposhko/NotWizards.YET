@@ -1,5 +1,5 @@
 .projects {
-  background-color: #1c1d20;
+  background-color: var(--background-color);
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -13,14 +13,14 @@
   line-height: 150%;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #fafafa66;
+  color: var(--grey-title-color);
 }
 .projects-card-contaiter {
   margin-bottom: 32px;
 }
 .projects-tags {
   padding: 32px;
-  background-color: #fafafa;
+  background-color: var(--white-text-color);
   border-radius: 24px 24px 0 0;
 }
 .projects-tags-box {
@@ -32,7 +32,7 @@
   margin-bottom: 96px;
 }
 .projects-tags-list {
-  color: rgb(28, 29, 32);
+  color: var(--background-color);
   font-family: Inter Tight;
   font-size: 16px;
   font-weight: 500;
@@ -53,7 +53,7 @@
   gap: 32px;
 }
 .projects-card-title {
-  color: #1c1d20;
+  color: var(--background-color);
   font-family: Inter Tight;
   font-size: 24px;
   font-weight: 500;
@@ -67,7 +67,7 @@
   justify-content: center;
   align-items: center;
   padding: 13px 32px;
-  color: #fafafa;
+  color: var(--white-text-color);
   font-family: Inter Tight;
   font-size: 16px;
   font-weight: 500;
@@ -75,14 +75,14 @@
   letter-spacing: -0.02em;
   text-align: left;
   border-radius: 60px;
-  background: #ed3b44;
+  background: var(--accent-color);
 }
 .projects-link:hover {
   background: #e0373f;
 }
 .projects-image-box {
   padding: 100px 16px;
-  background-color: #242527;
+  background-color: var(--cards-background-color);
   border-radius: 0 0 24px 24px;
   display: flex;
   justify-content: center;
