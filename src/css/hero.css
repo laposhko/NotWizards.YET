@@ -29,20 +29,29 @@
   justify-content: center;
   border: 1px solid var(--button-border-color);
   border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 37px;
   height: 37px;
   font-size: 14px;
   letter-spacing: -0.02em;
+  line-height: 1;
   padding: 10px 12px;
+
 }
+
+.contacts-list:hover,
+.contacts-list:active {
+  border: 1px solid var(--white-text-color);
+}
+
 
 .mail {
   display: block;
   width: 178px;
   border-radius: 60px;
+}
+
+.hero-link {
+  align-self: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -62,10 +71,12 @@
     margin: 187px 0 0 auto;
     width: 475px;
   }
+
   .contacts-list {
     width: 55px;
     height: 55px;
     font-size: 16px;
+
   }
 
   .mail {
@@ -90,24 +101,24 @@
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 320px),
-  screen and (min-resolution: 2dppi) and (min-width: 320px),
-  screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
+screen and (min-resolution: 2dppi) and (min-width: 320px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
   .hero {
     background-image: url(../img/hero/background-mobile@2x.png);
   }
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppi) and (min-width: 768px),
-  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+screen and (min-resolution: 2dppi) and (min-width: 768px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
   .hero {
     background-image: url('../img/hero/background-tablet@2x.png');
   }
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
-  screen and (min-resolution: 2dppi) and (min-width: 1440px),
-  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+screen and (min-resolution: 2dppi) and (min-width: 1440px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
   .hero {
     background-image: url('../img/hero/background-desktop@2x.png');
   }
