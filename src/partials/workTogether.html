@@ -1,69 +1,66 @@
 <section class="order" id="order">
-  <div class="container order-section-wrapper">
-    <div class="all-order">
-      <div class="title-container">
-        <img
-          class="order-image"
-          srcset="
-            ./img/workTogether-img/image-mobile.jpeg      44w,
-            ./img/workTogether-img/image-mobile@2x.jpeg   88w,
-            ./img/workTogether-img/image-tablet.jpeg      70w,
-            ./img/workTogether-img/image-tablet@2x.jpeg  140w,
-            ./img/workTogether-img/image-desktop.jpeg     70w,
-            ./img/workTogether-img/image-desktop@2x.jpeg 140w
-          "
-          sizes="(min-width: 1280px) 70px, (min-width: 768px) 70px, (max-width: 767px) 44px"
-          src="../img/workTogether-img/image-mobile.jpeg"
-          alt="photo of the candidate"
-          width="70"
-          height="70"
-        />
-        <h2 class="order-title">
-          Let’s <span class="text-order"> work </span> <br />
-          <span class="text-title">together</span>
-        </h2>
-      </div>
-      <form class="order-form">
-        <div class="field-wrapper">
-          <label class="order-form-label" for="user-email">
-            <input
-              class="field"
-              type="email"
-              placeholder="clients@gmail.com"
-              name="user-email"
-              id="user-email"
-              required
-              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-              title="Success!"
-              oninvalid="Invalidemail,tryagain"
+    <div class="container">
+      <div class="all-order">
+        <div class="title-container">
+            <img
+              class="order-image"
+              srcset="
+                ./img/workTogether-img/image-mobile.jpeg     44w,
+                ./img/workTogether-img/image-mobile@2x.jpeg  88w,
+                ./img/workTogether-img/image-tablet.jpeg     70w,
+                ./img/workTogether-img/image-tablet@2x.jpeg  140w,
+                ./img/workTogether-img/image-desktop.jpeg    70w,
+                ./img/workTogether-img/image-desktop@2x.jpeg 140w
+              "
+              sizes="(min-width: 1280px) 70px, (min-width: 768px) 70px, (max-width: 767px) 44px"
+              src="../img/workTogether-img/image-mobile.jpeg"
+              alt="photo of the candidate"
+              width="70"
+              height="70"
             />
-          </label>
-          <label class="order-form-label" for="user-comments">
-            <textarea
-              class="field comments"
-              name="user-comments"
-              id="user-comments"
-              placeholder="comments"
-              rows="1"
-            ></textarea>
-          </label>
+            <h2 class="order-title">
+                Let’s <span class="text-order"> work </span> <br>  <span class="text-title">together</span>
+            </h2>
         </div>
-        <button class="order-button" type="submit">Send</button>
-      </form>
-      <address>
-        <ul class="address-list">
-          <li class="mail-item adress-item">
-            <a href="mailto:lloydjefferson@gmail.com" class="contact-link link"
-              >lloydjefferson@gmail.com</a
-            >
-          </li>
-          <li class="phone-item adress-item">
-            <a href="tel:+3801111111111" class="contact-link link"
-              >+380 11 1111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+        <form class="order-form">
+            <div class="field-wrapper">
+                <label for="user-email">
+                    <input
+                      class="field email-field"
+                      type="email"
+                      placeholder="clients@gmail.com"
+                      name="user-email"
+                      id="user-email"
+                      required
+                      pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+                    />
+                    <span class="error is-hidden">Not succes!</span>
+                    <span class="succes is-hidden">Succes!</span>
+                  </label>
+                  <label for="user-comments">
+                    <textarea
+                      class="field comments"
+                      name="user-comments"
+                      id="user-comments"
+                      placeholder="comments"
+                      rows="1"
+                    ></textarea>
+                  </label>
+            </div> 
+            <button class="order-button" type="submit">
+            Send
+            </button>
+        </form>
+        <address>
+            <ul class="address-list">
+                <li class="mail-item adress-item">
+                    <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a></li>
+                <li class="phone-item adress-item">
+                    <a href="tel:+3801111111111">+380 11 1111 11 11</a>
+                </li>
+            </ul>    
+        </address>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+ 
