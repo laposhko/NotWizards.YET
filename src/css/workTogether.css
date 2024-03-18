@@ -160,6 +160,11 @@
     scale: 1.05;
   }
   
+  .order-button:disabled {
+    background-color: var(--accent-color);
+    scale: 1;
+    opacity: 0.5;
+  }
   .address-list {
     display: flex; 
     flex-direction: row;
