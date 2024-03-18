@@ -3,20 +3,23 @@
 @import url('./hero.css');
 @import url('./about.css');
 @import url('./benefits.css');
+@import url('./covers.css');
+@import url('./reviews.css');
+@import url('./workTogether.css');
 
 /*  */
 /* @import url('./projects.css'); */
 @import url('./faq.css');
-/* @import url('./covers.css');
-@import url('./workTogether.css'); */
-
-@import url(./reviews.css);
-:root {
+*/ :root {
   --white-text-color: #fafafa;
   --arrow-color: #3b3b3b;
   --accent-color: #ed3b44;
   --background-color: #1c1d20;
   --cards-background-color: #242527;
+  --middle-gradient-color: #69292d;
+  --button-border-color: rgba(250, 250, 250, 0.2);
+  --grey-title-color: (250, 250, 250, 0.4);
+  --grey-text-color: (#fafafa99);
 }
 
 .visually-hidden {
