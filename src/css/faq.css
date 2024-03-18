@@ -5,10 +5,6 @@
   padding-bottom: 32px;
 }
 
-.container-faq {
-  width: 343px;
-}
-
 .faq-title {
   color: var(--grey-title-color);
   font-size: 16px;
