@@ -1,7 +1,6 @@
-// 1 валідація форми
-// 2 post запит > відповідь модалка > BasicLightBox
-import * as basicLightbox from 'basiclightbox'
-import 'basiclightbox/dist/basicLightbox.min.css'
+
+import * as basicLightbox from 'basiclightbox';
+import 'basiclightbox/dist/basicLightbox.min.css';
 import axios from "axios";
 
 const emailInput = document.getElementById('user-email');
@@ -11,38 +10,53 @@ const form = document.querySelector ('.order-form');
 const textValid = document.querySelector ('.succes');
 const textInvalid = document.querySelector ('.error');
 
+let inst;
+
 // ВАЛІДАЦІЯ
+// прибрати стандартне повідомлення браузера
 emailInput.addEventListener('invalid', function(event){
-    event.preventDefault()
+    event.preventDefault();
 });
 
-emailInput.addEventListener ('focus', function(event) {
-    event.preventDefault()
-    if (!emailInput.checkValidity) {
-        textValid.classList.add ('is-hidden')
-    }
-    else {
-        textInvalid.classList.add ('is-hidden')
-    }
-});
-
-emailInput.addEventListener('blur', function() {
+// валідація за патерном
+function changeInput(event) {
     if (!emailInput.checkValidity()) {
-        textInvalid.classList.remove ('is-hidden')
-        textValid.classList.add ('is-hidden')
+        orderBtn.disabled = true;
+        textInvalid.classList.remove ('is-hidden');
+        textValid.classList.add ('is-hidden');
         emailInput.reportValidity();
     }
     else {
-        textInvalid.classList.add ('is-hidden')
-        textValid.classList.remove ('is-hidden')
+        orderBtn.disabled = false;
+        textInvalid.classList.add ('is-hidden');
+        textValid.classList.remove ('is-hidden');
         emailInput.reportValidity();
     }
-});
+};
+// слухачі
+emailInput.addEventListener('focus', changeInput);
+emailInput.addEventListener('input', changeInput);
+emailInput.addEventListener('blur', changeInput);
+
+
+// // перевірка на наявність значення в input ЛАМАЄ ЛОГІКУ ЗАПИТУ
+// function notChangeInput(event) {
+//         console.log(emailInput.value);
+//         if (!emailInput.value) {
+//             orderBtn.disabled = false;
+//             textInvalid.classList.add ('is-hidden');
+//             textValid.classList.add ('is-hidden');
+//         } else {
+//             orderBtn.disabled = true;
+//         }
+//     }
+// emailInput.addEventListener ('focus', notChangeInput);
+// emailInput.addEventListener ('input', notChangeInput);
+// emailInput.addEventListener ('blur', notChangeInput);
 
 
 // ЗАПИТ
 const BASE_URL = 'https://portfolio-js.b.goit.study/api'
-
 
 const addNewUser = async (event) => {
     event.preventDefault()
@@ -56,11 +70,11 @@ const addNewUser = async (event) => {
               'Content-Type': 'application/json'
             }})
         console.log(response.data)
-        const inst = basicLightbox.create(
+         inst = basicLightbox.create(
             `<div class="modal">
-            <button class="close-btn" type="button">
+            <button class="close-btn" id="close-btn" type="button">
               <svg class="close-btn-icon" width="22" height="22">
-                <use href="./img/symbol-defs#icon-x.svg"></use>
+                <use href="./img/symbol-defs.svg#icon-x"></use>
               </svg> 
             </button>
               <div class modal-message">
@@ -69,14 +83,18 @@ const addNewUser = async (event) => {
               </div>
           </div>`)
           inst.show()
+          const closeBtn = document.getElementById('close-btn')
+          closeBtn.addEventListener ('click', () => {
+            inst.close();
+        })
     }
     catch(error) {
         console.log(error)
-        const inst = basicLightbox.create(
+         inst = basicLightbox.create(
             `<div class="modal">
-            <button class="close-btn" type="button">
+            <button class="close-btn" id="close-btn" type="button">
               <svg class="close-btn-icon" width="22" height="22">
-                <use href="./img/symbol-defs#icon-x.svg"></use>
+                <use href="./img/symbol-defs.svg#icon-x"></use>
               </svg> 
             </button>
              <div class "modal-message">
@@ -85,11 +103,29 @@ const addNewUser = async (event) => {
              </div>
           </div>`)
           inst.show()
+          const closeBtn = document.getElementById('close-btn')
+          closeBtn.addEventListener ('click', () => {
+            inst.close();
+        })
     }
     finally {
         form.reset();
-        textValid.classList.add('is-hidden')
+        textValid.classList.add('is-hidden');
+        textInvalid.classList.add('is-hidden');
     }
 }
 form.addEventListener ('submit', addNewUser);
 
+
+// ОБРІЗАТИ ТЕКСТ
+function truncateText(commentInput) {
+    const maxLength = 35;
+    const currentValue = commentInput.value;
+    if (currentValue.length > maxLength) {
+        const truncatedValue = currentValue.substring(0, maxLength);
+        commentInput.value = truncatedValue + '…';
+    }
+}
+commentInput.addEventListener('input', function() {
+    truncateText(this);
+});
