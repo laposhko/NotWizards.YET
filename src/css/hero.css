@@ -21,8 +21,9 @@
 .contacts {
   display: flex;
   gap: 0 4px;
-  margin-top: 212px;
+  margin: 212px auto 0 auto;
   width: 342px;
+ 
 }
 
 li.contacts-list {
