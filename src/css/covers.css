@@ -1,21 +1,23 @@
-/* ========== mobale styles ========== */
+/* ========== mobile styles ========== */
 
-.covers {
-    background-image: linear-gradient(
-        rgba(217, 217, 217, 0.04),
-        rgba(217, 217, 217, 0.04)
-    ), 
-    url(../img/covers/background.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: rgba(217, 217, 217, 0.04);    
+.covers-section {
+    padding-top: 32px;
+    padding-bottom: 32px;    
 }
 
 .content {
     position: relative;
+    max-width: 375px;
     height: 508px;
-    overflow: hidden; 
+    margin: 0 auto;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(217, 217, 217, 0.04),
+                rgba(217, 217, 217, 0.04)),
+            url(../img/covers/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(217, 217, 217, 0.04);
 }
    
 .covers-list {
@@ -40,7 +42,7 @@
     height: 163px;
     animation-name: coversLine;
     animation-duration: 8s;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     animation-iteration-count: infinite;
 }
 
@@ -54,10 +56,10 @@
     }
 }
 
-@media screen and (min-resolution: 192dpi),
+@media  screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx),
         screen and (min-device-pixel-ratio: 2) {
-            .covers {
+            .content {
                 background-image: linear-gradient(
                     rgba(217, 217, 217, 0.04),
                     rgba(217, 217, 217, 0.04)
@@ -67,12 +69,19 @@
 }
 
 
-/* ========== tablet_desktop styles ========== */
+/* ========== tablet styles ========== */
 
 @media screen and (min-width: 768px) {
  
+    .covers-section {
+         padding-top: 48px;
+         padding-bottom: 48px;       
+    }
+    
     .content {
+        max-width: 768px;
         height: 960px;
+        margin: 0 auto;
     }
 
     .covers-list {
@@ -86,5 +95,19 @@
     .covers-image {
         width: 544px;
         height: 314px;
+    }
+}
+
+/* ========== desktop styles ========== */
+
+@media screen and (min-width: 1440px) {
+
+    .covers-section {
+        padding-top: 104px;
+        padding-bottom: 60px;
+    }
+    
+    .content {
+        max-width: 1440px;
     }
 }
