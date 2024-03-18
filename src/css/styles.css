@@ -6,11 +6,11 @@
 @import url('./covers.css');
 @import url('./reviews.css');
 @import url('./workTogether.css');
-@import url('./faq.css');
-/*  */
-/* @import url('./projects.css'); 
-*/
-*/ :root {
+
+/*  @import url('./projects.css'); 
+ */
+
+:root {
   --white-text-color: #fafafa;
   --arrow-color: #3b3b3b;
   --accent-color: #ed3b44;
