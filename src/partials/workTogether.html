@@ -1,5 +1,5 @@
 <section class="order" id="order">
-    <div class="container order-section-wrapper">
+    <div class="container">
       <div class="all-order">
         <div class="title-container">
             <img
@@ -24,20 +24,20 @@
         </div>
         <form class="order-form">
             <div class="field-wrapper">
-                <label class="order-form-label" for="user-email">
+                <label for="user-email">
                     <input
-                      class="field"
+                      class="field email-field"
                       type="email"
                       placeholder="clients@gmail.com"
                       name="user-email"
                       id="user-email"
                       required
-                      pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-                      title="Succes!"
-                      oninvalid="Invalid email, try again"
+                      pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
                     />
+                    <span class="error is-hidden">Not succes!</span>
+                    <span class="succes is-hidden">Succes!</span>
                   </label>
-                  <label class="order-form-label" for="user-comments">
+                  <label for="user-comments">
                     <textarea
                       class="field comments"
                       name="user-comments"
@@ -54,12 +54,13 @@
         <address>
             <ul class="address-list">
                 <li class="mail-item adress-item">
-                    <a href="mailto:lloydjefferson@gmail.com" class="contact-link link">lloydjefferson@gmail.com</a></li>
+                    <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a></li>
                 <li class="phone-item adress-item">
-                    <a href="tel:+3801111111111" class="contact-link link">+380 11 1111 11 11</a>
+                    <a href="tel:+3801111111111">+380 11 1111 11 11</a>
                 </li>
             </ul>    
         </address>
       </div>
     </div>
   </section>
+ 

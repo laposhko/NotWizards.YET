@@ -15,7 +15,10 @@
   "author": "Alexandra Laposhko <laposhko0@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "accordion-js": "^3.3.4",
     "axios": "^1.6.8",
+    "basiclightbox": "^5.0.4",
+    "swiper": "^11.0.7",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }
