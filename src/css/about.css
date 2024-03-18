@@ -46,6 +46,8 @@
     color: rgba(250, 250, 250, 0.4);
 }
 
+/* ACCORDION STYLES */
+
 .accordion-element:not(:first-child){
     margin-top: 32px;
 }
@@ -99,6 +101,8 @@
   border-radius: 2px;
 }
 
+/* SWIPER STYLES */
+
 .swiper-container {
     padding-top: 96px;
     position: relative;
@@ -109,6 +113,14 @@
   height: auto;
   overflow: hidden;
 }
+
+.skills-swiper-wrapper  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
 
 .skills-swiper-wrapper .skill-slide {
     display: flex;
@@ -129,9 +141,7 @@
 
 .swiper-button-next {
     display: flex;
-    position: absolute;
-    width: 40px;
-    height: 40px;
+    position: absolute; 
     right: 0;
     top: 67%;
     transform: translateY(-50%);
