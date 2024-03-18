@@ -51,6 +51,40 @@
     flex-direction: column;
     gap: 16px;
   }
+
+  input:valid,
+  input:hover:valid  {
+    border-bottom: 1px solid #3cbc81;
+  }
+
+  input:invalid,
+  input:hover:invalid {
+    border-bottom: 1px solid #e74a3b;
+  }
+
+  .error {
+    display: block;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    color: #e74a3b;
+  }
+
+  .succes {
+    display: block;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    color: #3cbc81;
+  }
+
+  .is-hidden {
+    display: none;
+  }
   
   .field{
     font-family: inherit;
@@ -64,6 +98,7 @@
     background-color: inherit;
     border: none;
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+    outline: none;
   }
   
   .field:placeholder-shown {
@@ -149,6 +184,43 @@
         background-image: url(../img/workTogether-img/elements-mob@2x.png);
     }  
   }
+
+  .modal {
+    background-color: #242527;
+    border: 1px solid rgba(250, 250, 250, 0.1);
+    border-radius: 20px;
+    padding: 64px 32px;
+    width: 343px;
+    height: 276px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal-message {
+    width: 279px;
+    height: 148px;
+  }
+
+  .modal-title {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fafafa;
+    margin-bottom: 20px;
+  }
+
+  .modal-text {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(250, 250, 250, 0.6);
+  }
   /* ==========MOBYLE STYLES======== */
   
   /* ==========TABLET STYLES======== */
@@ -229,6 +301,16 @@
         width: 176px;
         height: 55px;
     }
+
+    .modal {
+      width: 768px;
+      height: 636px;
+    }
+  
+    .modal-message {
+      width: 364px;
+      height: 118px;
+    }
   }
   
   @media screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -270,6 +352,12 @@
     .phone-item {
         width: 176px;
         height: 55px;
+    }
+
+    .modal {
+      padding: 64px;
+      width: 492px;
+      height: 246px;
     }
   }
   
