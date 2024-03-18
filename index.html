@@ -14,9 +14,9 @@
     
     <link rel="shortcut icon" href="/NotWizards.YET/assets/favicon-dd95403b.ico" />
     <script type="module" crossorigin src="/NotWizards.YET/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/NotWizards.YET/assets/vendor-1a96c6ea.js">
-    <link rel="stylesheet" href="/NotWizards.YET/assets/vendor-83cd2472.css">
-    <link rel="stylesheet" href="/NotWizards.YET/assets/index-883f4982.css">
+    <link rel="modulepreload" crossorigin href="/NotWizards.YET/assets/vendor-a5f1ec74.js">
+    <link rel="stylesheet" href="/NotWizards.YET/assets/vendor-c6903f92.css">
+    <link rel="stylesheet" href="/NotWizards.YET/assets/index-2130491c.css">
   </head>
   <body>
     <header class="header">
@@ -61,7 +61,7 @@
     <!-- mob menu btn -->
     <button class="header-btn">
       <svg class="header-btn-icon" width="28px" height="28px">
-        <use href="/NotWizards.YET/assets/symbol-defs-cd35f5cc.svg#icon-mobile-menu-burger"></use>
+        <use href="/NotWizards.YET/assets/symbol-defs-adc4ad3c.svg#icon-mobile-menu-burger"></use>
       </svg>
     </button>
   </div>
@@ -70,7 +70,7 @@
     <div class="mobmenu container">
       <button class="mobmenu__close">
         <svg class="mobmenu-close-icon" width="28px" height="28px">
-          <use href="/NotWizards.YET/assets/symbol-defs-cd35f5cc.svg#icon-x"></use>
+          <use href="/NotWizards.YET/assets/symbol-defs-adc4ad3c.svg#icon-x"></use>
         </svg>
       </button>
       <ul class="mobmenu-list">
@@ -136,69 +136,118 @@
   </div>
 </section>
 
-    <section id="about" class="about-section">
-  <h2 hidden>About</h2>
-  <div class="container container-about">
-    <ul>
-      <li>
-        <h3 class="about-header">About me</h3>
-        <p>
-          <br />
-          I am Lloyd Jefferson, a talented programmer with extensive expertise
-          in software development. I have an understanding of different
-          programming languages and technologies, always ready to improve my
-          skills. I always follow the latest trends and look for unconventional,
-          creative solutions to problems. I have a high level of analytical
-          skills and am able to effectively solve even the most difficult tasks
-          encountered on the way.<br />
-          <br />
-          Able to work both independently and in a team. I can effectively
-          cooperate with colleagues, exchanging ideas and finding optimal
-          solutions. Professional maturity allows you to calmly cope with
-          challenges and stressful situations, while maintaining a high quality
-          of work. I am always looking for opportunities for self-improvement. I
-          actively study new technologies and practices to stay abreast of the
-          latest innovations. I have a strong understanding of various
-          programming languages, frameworks and architectural concepts that
-          allow me to create efficient and scalable software.<br />
-        </p>
-        <button class="toggle"></button>
-      </li>
-      <li>
-        <h3 class="about-header">Role</h3>
-        <p>
-          <br />Frontend development<br />
-          <br />HeadlessCMS,Wordpress<br />
-          <br />Blender(enjoy)<br />
-        </p>
-        <button class="toggle"></button>
-      </li>
-      <li>
-        <h3 class="about-header">Education</h3>
-        <p>
-          <br />2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
-          York<br />
-          <br />2019 - 2020 / Advanced Web Development Certificate, GoIT IT
-          School, New York<br />
-          <br />2020 - 2022 / Advanced Blender Animation Techniques, Udemy<br />
-        </p>
-        <button class="toggle"></button>
-      </li>
-    </ul>
-  </div>
-  <div class="skills">
-    <ul class="skills-circles">
-      <li class="circle-btn"><h3 class="skill-name">HTML/CSS</h3></li>
-      <li class="circle-btn"><h3 class="skill-name">JavaScript</h3></li>
-      <li class="circle-btn"><h3 class="skill-name">React</h3></li>
-      <li class="circle-btn"><h3 class="skill-name">Node.js</h3></li>
-      <li class="circle-btn"><h3 class="skill-name">React Native</h3></li>
-      <li class="circle-btn"><h3 class="skill-name">Soft Skills</h3></li>
-    </ul>
-    <button class="button"></button>
+    <section class="about-section" id="about">
+  <div class="container">
+    <h2 hidden>About</h2>
+    <div class="pictures-container">
+        <ul class="pictures-about">
+           <li class="main-about-block">
+            <p class="main-about-info"> 
+                I work with people all over the world to create impressive and <span class="functional-word">functional</span><span class="website-word"> websites</span> that reflect each client's unique
+                personality.
+            </p>
+           </li>
+           <li class="main-about-block">
+            <img class="my-photo" srcset="/NotWizards.YET/assets/mobile-about-61c8dce7.png 343w, /NotWizards.YET/assets/tablet-about-8a4bb94b.png 704w, /NotWizards.YET/assets/desktop-about-9f4ba5df.png 680w, /NotWizards.YET/assets/mobile-about@2x-f6cbd3f0.png 686w, /NotWizards.YET/assets/tablet-about@2x-449596ac.png 1408w, /NotWizards.YET/assets/desktop-about@2x-fa34dd74.png 1360w"
+                sizes="(min-width: 1440px) 680px, (min-width: 768px) 704px, (max-width: 767px) 343px" src="/NotWizards.YET/assets/desktop-about-9f4ba5df.png"
+                alt="me" />
+           </li>
+        </ul>
+    </div>
+    <div class="container-about">
+        <ul class="accordion-list">
+            <li class="accordion-element">
+                <div class="accordion-title">
+                <h3>About me</h3>
+                <button class="arrow" type="button">
+                    <svg class="arrow-down" width="20" height="20">
+                    <use href="../img/symbol-defs.svg#icon-arrow-down"></use>
+                    </svg>
+                </button>
+                </div>
+                <div class="accordion-description">
+                <p class="ac-text">
+                    I am Lloyd Jefferson, a talented programmer with extensive expertise in software development. I have an understanding of
+                    different programming languages and technologies, always ready to improve my skills. I always follow the latest trends
+                    and look for unconventional, creative solutions to problems. I have a high level of analytical skills and am able to
+                    effectively solve even the most difficult tasks encountered on the way.
+                </p>
+                <p class="ac-text">
+                   Able to work both independently and in a team. I can effectively cooperate with colleagues, exchanging ideas and finding
+                    optimal solutions. Professional maturity allows you to calmly cope with challenges and stressful situations, while
+                    maintaining a high quality of work. I am always looking for opportunities for self-improvement. I actively study new
+                    technologies and practices to stay abreast of the latest innovations. I have a strong understanding of various
+                    programming languages, frameworks and architectural concepts that allow me to create efficient and scalable software.
+               </p>
+            </div>
+            </li>
+            <li class="accordion-element">
+                <div class="accordion-title">
+                <h3>Role
+                    <button class="arrow" type="button">
+                        <svg class="arrow-down" width="20" height="20">
+                            <use href="../img/symbol-defs.svg#icon-arrow-down"></use>
+                        </svg>
+                    </button>
+                </h3>
+                </div>
+                <div class="accordion-description">
+                <p class="ac-text">Frontend development</p>
+                <p class="ac-text">HeadlessCMS,Wordpress</p>
+                <p class="ac-text">Blender(enjoy)</p>
+                </div>
+            </li>
+            <li class="accordion-element"> 
+                <div class="accordion-title">
+                <h3>Education
+                        <button class="arrow" type="button">
+                            <svg class="arrow-down" width="20" height="20">
+                            <use href="../img/symbol-defs.svg#icon-arrow-down"></use>
+                            </svg>
+                        </button>
+                </h3>
+                </div>
+                <div class="accordion-description">
+                   <p class="ac-text">2018 - 2019 / Frontend Development Diploma,   GoIT IT School, New York </p>
+                    <p class="ac-text">2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York </p>
+                    <p class="ac-text">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="swiper-container">
+        <div class = "skills-container"> 
+          <ul class="skills-swiper-wrapper swiper-wrapper"> 
+            <li class="swiper-slide skill-slide">
+                <h3 class="skill-name">HTML/CSS</h3>
+            </li>
+            <li class="swiper-slide skill-slide">
+                <h3 class="skill-name">JavaScript</h3>
+            </li>
+            <li class="swiper-slide skill-slide">
+                <h3 class="skill-name">React</h3>
+            </li>
+            <li class="swiper-slide skill-slide">
+                <h3 class="skill-name">Node.js</h3>
+            </li>
+            <li class="swiper-slide skill-slide">
+                <h3 class="skill-name">React Native</h3>
+            </li>
+            <li class="swiper-slide skill-slide">
+                <h3 class="skill-name">Soft Skills</h3>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-button-next">
+          <button class="button-next" type="button">
+            <svg class="icon-arrow-narrow-right" width="40" height="40">
+                <use href="../img/symbol-defs.svg#icon-arrow-narrow-right"></use>
+            </svg>
+          </button> 
+        </div>
+    </div>
   </div>
 </section>
-
     <section class="benefits-container" id="benefits">
   <div class="container">
     <h2 class="benefits-header">Benefits of working with me</h2>
@@ -206,7 +255,7 @@
       <li class="benefits-item">
         <div class="square-icon">
           <svg class="icon" width="24" height="24">
-            <use href="/NotWizards.YET/assets/symbol-defs-cd35f5cc.svg#icon-user"></use>
+            <use href="/NotWizards.YET/assets/symbol-defs-adc4ad3c.svg#icon-user"></use>
           </svg>
         </div>
 
@@ -219,7 +268,7 @@
       <li class="benefits-item">
         <div class="square-icon">
           <svg class="icon" width="24" height="24">
-            <use href="/NotWizards.YET/assets/symbol-defs-cd35f5cc.svg#icon-message-chat-circle"></use>
+            <use href="/NotWizards.YET/assets/symbol-defs-adc4ad3c.svg#icon-message-chat-circle"></use>
           </svg>
         </div>
 
@@ -232,7 +281,7 @@
       <li class="benefits-item">
         <div class="square-icon">
           <svg class="icon" width="24" height="24">
-            <use href="/NotWizards.YET/assets/symbol-defs-cd35f5cc.svg#icon-brush"></use>
+            <use href="/NotWizards.YET/assets/symbol-defs-adc4ad3c.svg#icon-brush"></use>
           </svg>
         </div>
         <h4 class="item-header">Art</h4>
@@ -244,7 +293,7 @@
       <li class="benefits-item">
         <div class="square-icon">
           <svg class="icon" width="24" height="24">
-            <use href="/NotWizards.YET/assets/symbol-defs-cd35f5cc.svg#icon-hourglass"></use>
+            <use href="/NotWizards.YET/assets/symbol-defs-adc4ad3c.svg#icon-hourglass"></use>
           </svg>
         </div>
         <h4 class="item-header">Urgent execution</h4>
@@ -468,12 +517,12 @@
     <div class="projects-box-arrow">
       <button class="projects-buttons swiper-button-prev-left" type="button">
         <svg width="24" height="24" class="icon-arrow-left">
-          <use href="/NotWizards.YET/assets/symbol-defs-cd35f5cc.svg#icon-arrow-narrow-left"></use>
+          <use href="/NotWizards.YET/assets/symbol-defs-adc4ad3c.svg#icon-arrow-narrow-left"></use>
         </svg>
       </button>
       <button class="projects-buttons swiper-button-next-right" type="button">
         <svg width="24" height="24" class="icon-arrow-right">
-          <use href="/NotWizards.YET/assets/symbol-defs-cd35f5cc.svg#icon-arrow-narrow-right"></use>
+          <use href="/NotWizards.YET/assets/symbol-defs-adc4ad3c.svg#icon-arrow-narrow-right"></use>
         </svg>
       </button>
     </div>
@@ -492,7 +541,7 @@
           </h4>
           <button class="btn-arrow-toggl">
             <svg width="20px" height="20px">
-              <use href="/NotWizards.YET/assets/symbol-defs-cd35f5cc.svg#icon-arrow-down"></use>
+              <use href="/NotWizards.YET/assets/symbol-defs-adc4ad3c.svg#icon-arrow-down"></use>
             </svg>
           </button>
         </div>
@@ -509,7 +558,7 @@
           <h4 class="item-title">What are the deadlines for the project?</h4>
           <button class="btn-arrow-toggl">
             <svg width="20px" height="20px">
-              <use href="/NotWizards.YET/assets/symbol-defs-cd35f5cc.svg#icon-arrow-down"></use>
+              <use href="/NotWizards.YET/assets/symbol-defs-adc4ad3c.svg#icon-arrow-down"></use>
             </svg>
           </button>
         </div>
@@ -528,7 +577,7 @@
           <h4 class="item-title">What payment methods do you accept?</h4>
           <button class="btn-arrow-toggl">
             <svg width="20px" height="20px">
-              <use href="/NotWizards.YET/assets/symbol-defs-cd35f5cc.svg#icon-arrow-down"></use>
+              <use href="/NotWizards.YET/assets/symbol-defs-adc4ad3c.svg#icon-arrow-down"></use>
             </svg>
           </button>
         </div>
@@ -545,7 +594,7 @@
           <h4 class="item-title">How can I contact you?</h4>
           <button class="btn-arrow-toggl">
             <svg width="20px" height="20px">
-              <use href="/NotWizards.YET/assets/symbol-defs-cd35f5cc.svg#icon-arrow-down"></use>
+              <use href="/NotWizards.YET/assets/symbol-defs-adc4ad3c.svg#icon-arrow-down"></use>
             </svg>
           </button>
         </div>
@@ -562,7 +611,7 @@
           <h4 class="item-title">Do you provide advice or support?</h4>
           <button class="btn-arrow-toggl">
             <svg width="20px" height="20px">
-              <use href="/NotWizards.YET/assets/symbol-defs-cd35f5cc.svg#icon-arrow-down"></use>
+              <use href="/NotWizards.YET/assets/symbol-defs-adc4ad3c.svg#icon-arrow-down"></use>
             </svg>
           </button>
         </div>
@@ -584,7 +633,7 @@
           </h4>
           <button class="btn-arrow-toggl">
             <svg width="20px" height="20px">
-              <use href="/NotWizards.YET/assets/symbol-defs-cd35f5cc.svg#icon-arrow-down"></use>
+              <use href="/NotWizards.YET/assets/symbol-defs-adc4ad3c.svg#icon-arrow-down"></use>
             </svg>
           </button>
         </div>
@@ -718,12 +767,12 @@
       <div class="review-buttons-wrapper">
         <button class="previous-btn reviews-btn" type="button">
           <svg class="reviews-btn-left-icon arrow-item">
-            <use href="/NotWizards.YET/assets/symbol-defs-cd35f5cc.svg#icon-arrow-narrow-left"></use>
+            <use href="/NotWizards.YET/assets/symbol-defs-adc4ad3c.svg#icon-arrow-narrow-left"></use>
           </svg>
         </button>
         <button class="next-btn reviews-btn" type="button">
           <svg class="reviews-btn-right-icon arrow-item">
-            <use href="/NotWizards.YET/assets/symbol-defs-cd35f5cc.svg#icon-arrow-narrow-right"></use>
+            <use href="/NotWizards.YET/assets/symbol-defs-adc4ad3c.svg#icon-arrow-narrow-right"></use>
           </svg>
         </button>
       </div>
