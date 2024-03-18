@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 
 pull-requests-list.txt
+src/css/styles.css
