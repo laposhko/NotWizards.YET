@@ -3,7 +3,7 @@
   padding-top: 281px;
   padding-bottom: 32px;
   background-image: url(../img/Glass-desktop.png),
-    linear-gradient(to left, #1c1d20, #69292d, #ed3b44);
+    linear-gradient(to left, var(--background-color),var(--middle-gradient-color), var(--accent-color));
   background-size: 310px 100%, 100% 100%;
   background-repeat: no-repeat;
 }
@@ -14,7 +14,7 @@
   font-size: 50px;
   line-height: 1;
   letter-spacing: -0.03em;
-  color: #fafafa;
+  color:var(--white-text-color);
   width: 343px;
 }
 
