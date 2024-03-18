@@ -2,9 +2,8 @@
   position: relative;
   padding-top: 281px;
   padding-bottom: 32px;
-  background-image: url(../img/Glass-desktop.png),
-    linear-gradient(to left, var(--background-color),var(--middle-gradient-color), var(--accent-color));
-  background-size: 310px 100%, 100% 100%;
+  background-image: url(../img/hero/background-mobile.png);
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
@@ -14,19 +13,25 @@
   font-size: 50px;
   line-height: 1;
   letter-spacing: -0.03em;
-  color:var(--white-text-color);
+  color: var(--white-text-color);
   width: 343px;
 }
 
-.contacts {
+.hero-contacts {
   display: flex;
   gap: 0 4px;
   margin: 212px auto 0 auto;
   width: 342px;
- 
 }
 
-li.contacts-list {
+.contacts-list {
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--button-border-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 37px;
   height: 37px;
   font-size: 14px;
@@ -34,7 +39,7 @@ li.contacts-list {
   padding: 10px 12px;
 }
 
-li.mail {
+.mail {
   display: block;
   width: 178px;
   border-radius: 60px;
@@ -42,9 +47,9 @@ li.mail {
 
 @media screen and (min-width: 768px) {
   .hero {
+    background-image: url(../img/hero/background-tablet.png);
     padding-top: 300px;
     padding-bottom: 32px;
-    background-size: 581px 100%, 100% 100%;
   }
 
   .hero-title {
@@ -52,18 +57,18 @@ li.mail {
     width: 632px;
   }
 
-  .contacts {
+  .hero-contacts {
     gap: 0 8px;
     margin: 187px 0 0 auto;
     width: 475px;
   }
-  li.contacts-list {
+  .contacts-list {
     width: 55px;
     height: 55px;
     font-size: 16px;
   }
 
-  li.mail {
+  .mail {
     width: 223px;
     padding: 18px 24px;
   }
@@ -71,7 +76,7 @@ li.mail {
 
 @media screen and (min-width: 1440px) {
   .hero {
-    background-size: 728px 100%, 100% 100%;
+    background-image: url(../img/hero/background-desktop.png);
   }
 
   .hero-title {
@@ -79,7 +84,31 @@ li.mail {
     width: 1084px;
   }
 
-  .contacts {
+  .hero-contacts {
     margin-top: 243px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 320px),
+  screen and (min-resolution: 2dppi) and (min-width: 320px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
+  .hero {
+    background-image: url(../img/hero/background-mobile@2x.png);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppi) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .hero {
+    background-image: url('../img/hero/background-tablet@2x.png');
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppi) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  .hero {
+    background-image: url('../img/hero/background-desktop@2x.png');
   }
 }
