@@ -22,27 +22,29 @@
    
 .covers-list {
     position: absolute;
-    top: -420px;
-    left: 100px;
     z-index: 99;
     display: flex;
     flex-direction: column;
     gap: 24px;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .covers-list-item {
     display: flex;
     gap: 24px;
+    width: 1506px;
     transform: rotate(16deg);
 }
 
 .covers-image {
     width: 282px;
     height: 163px;
+}
+
+.in-viewport img {
     animation-name: coversLine;
     animation-duration: 8s;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     animation-iteration-count: infinite;
 }
 
@@ -52,7 +54,7 @@
     }
     
     to {
-      transform: translateX(-220%);
+      transform: translateX(-280%);
     }
 }
 
@@ -89,6 +91,7 @@
     }
 
     .covers-list-item {
+        width: 2912px;
         gap: 48px;
     }
 
