@@ -1,3 +1,4 @@
+'use strict';
 import axios from 'axios';
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
@@ -16,7 +17,7 @@ getData()
   .then(data => {
     createElement(data);
 
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.reviews-swiper', {
       direction: 'horizontal',
       updateOnWindowResize: true,
       slidesPerView: 1,
