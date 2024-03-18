@@ -1,5 +1,5 @@
 import Accordion from 'accordion-js';
-// import 'accordion-js/dist/accordion.min.css';
+import 'accordion-js/dist/accordion.min.css';
 
 const accordions = Array.from(
   document.querySelectorAll('.accordion-container')
