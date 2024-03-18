@@ -1,0 +1,152 @@
+/* Mobile styles */
+
+.reviews {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.review-title {
+  color: #fafafa66;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+}
+
+.review-list {
+  margin-bottom: 32px;
+}
+
+.review-item {
+  width: 344px;
+  min-height: 302px;
+  border: 1px solid #fafafa33;
+  border-radius: 20px;
+  padding: 32px 24px;
+}
+
+.review-avatar {
+  width: 48px;
+  height: 48px;
+  display: block;
+  border-radius: 10px;
+  margin-bottom: 32px;
+}
+
+.review-author-name {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.review-author-text {
+  color: #fafafa99;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.review-buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.reviews-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border: 1px solid #fafafa80;
+  padding: 14px;
+  border-radius: 60%;
+  cursor: pointer;
+  transition: all 300ms ease-in;
+}
+
+.arrow-item {
+  width: 24px;
+  height: 24px;
+  stroke: #fafafa;
+  transition: all 300ms ease-in;
+}
+
+.reviews-btn:hover {
+  border-color: #fafafa;
+}
+
+.reviews-btn:disabled {
+  border-color: #fafafa33;
+}
+
+.reviews-btn:disabled .arrow-item {
+  stroke: #fafafa33;
+}
+
+.error-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.error-title {
+  font-size: 26px;
+  color: #ffffff;
+}
+
+.error-text-describe {
+  color: #fafafab3;
+}
+
+.hide {
+  display: none;
+}
+
+/* Tablet styles */
+
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .review-buttons-wrapper {
+    gap: 20px;
+  }
+
+  .reviews-btn {
+    width: 68px;
+    height: 68px;
+    padding: 18px;
+  }
+
+  .arrow-item {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Laptop styles */
+
+@media screen and (min-width: 1140px) {
+  .reviews {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
+  .review-item {
+    width: 332px;
+  }
+}

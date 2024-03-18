@@ -1,15 +1,20 @@
 <header class="header">
   <div class="header-container container">
     <!-- logo -->
-    <a href="/index.html" class="header-logo">
+    <a href="index.html" class="header-logo">
       <picture>
         <source
-          srcset="../img/header-logo.png 1x, ../img/header-logo@2x.png 2x"
+          srcset="
+            ./img/header/header-logo.png    1x,
+            ./img/header/header-logo@2x.png 2x
+          "
         />
         <img
           class="header-logo-img"
-          src="../img/header-logo.png"
+          src="./img/header/header-logo.png"
           alt="portrait"
+          width="80px"
+          height="80px"
         />
       </picture>
 
@@ -19,36 +24,50 @@
     <nav class="header-nav">
       <button class="menu-btn">Menu</button>
       <ul class="header-menu visually-hidden">
-        <li><a href="">About me</a></li>
-        <li><a href="">Benefits</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">FAQ</a></li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="about">About me</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="benefits">Benefits</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="projects">Projects</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="faq">FAQ</a>
+        </li>
       </ul>
     </nav>
     <!-- order button -->
-    <a href="" class="header-order">Order the Project</a>
+    <a href="order" class="header-order">Order the Project</a>
     <!-- mob menu btn -->
     <button class="header-btn">
-      <svg width="28px" height="28px">
-        <use href="../img/symbol-defs.svg#icon-mobile-menu-burger"></use>
+      <svg class="header-btn-icon" width="28px" height="28px">
+        <use href="./img/symbol-defs.svg#icon-mobile-menu-burger"></use>
       </svg>
     </button>
-    <!-- mob menu -->
-    <div class="backdrop visually-hidden">
-      <div class="mobmenu">
-        <button class="mobmenu__close">
-          <svg width="28px" height="28px">
-            <use href="../img/symbol-defs.svg#icon-x"></use>
-          </svg>
-        </button>
-        <ul class="mobmenu-list">
-          <li class="mobmenu-item"><a href="">About me</a></li>
-          <li class="mobmenu-item"><a href="">Benefits</a></li>
-          <li class="mobmenu-item"><a href="">Projects</a></li>
-          <li class="mobmenu-item"><a href="">FAQ</a></li>
-        </ul>
-        <a href="" class="mobmenu-order">Order the project</a>
-      </div>
+  </div>
+  <!-- mob menu -->
+  <div class="backdrop">
+    <div class="mobmenu container">
+      <button class="mobmenu__close">
+        <svg class="mobmenu-close-icon" width="28px" height="28px">
+          <use href="./img/symbol-defs.svg#icon-x"></use>
+        </svg>
+      </button>
+      <ul class="mobmenu-list">
+        <li class="mobmenu-item">
+          <a class="mobmenu-link" href="about">About me</a>
+        </li>
+        <li class="mobmenu-item">
+          <a class="mobmenu-link" href="benefits">Benefits</a>
+        </li>
+        <li class="mobmenu-item">
+          <a class="mobmenu-link" href="projects">Projects</a>
+        </li>
+        <li class="mobmenu-item"><a class="mobmenu-link" href="faq">FAQ</a></li>
+      </ul>
+      <a href="order" class="mobmenu-order">Order the project</a>
     </div>
   </div>
 </header>
