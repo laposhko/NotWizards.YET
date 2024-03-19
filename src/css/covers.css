@@ -22,6 +22,7 @@
    
 .covers-list {
     position: absolute;
+    top: 24px;
     z-index: 99;
     display: flex;
     flex-direction: column;
@@ -32,7 +33,7 @@
 .covers-list-item {
     display: flex;
     gap: 24px;
-    width: 1506px;
+    width: 1818px;
     transform: rotate(16deg);
 }
 
@@ -91,7 +92,7 @@
     }
 
     .covers-list-item {
-        width: 2912px;
+        width: 3510px;
         gap: 48px;
     }
 
