@@ -134,7 +134,7 @@
 }
 
 .skills-container {
-  width: 90%;
+  width: 100%;
   height: auto;
   overflow: hidden;
 }
@@ -292,6 +292,8 @@
 
 .swiper-container {
     margin-top: 96px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .swipe-next-button .button-next {
@@ -299,5 +301,4 @@
     margin-top: 90px;
     margin-bottom: 90px;
 }
-
 }
