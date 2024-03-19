@@ -6,10 +6,14 @@ const accordions = Array.from(
 );
 new Accordion(accordions, {
   elementClass: 'item',
-  triggerClass: 'btn-arrow-toggl',
+  triggerClass: 'item-box',
   panelClass: 'item-text',
   onOpen: function (currentElement) {
-    console.log(currentElement.querySelector('svg'));
-    currentElement.querySelector('button').classList.add('.is-rotate');
+    const arrowIcon = currentElement.querySelector('.btn-arrow-toggl use');
+    arrowIcon.setAttribute('href', './img/symbol-defs.svg#icon-arrow-up');
+  },
+  onClose: function (currentElement) {
+    const arrowIcon = currentElement.querySelector('.btn-arrow-toggl use');
+    arrowIcon.setAttribute('href', './img/symbol-defs.svg#icon-arrow-down');
   },
 });
