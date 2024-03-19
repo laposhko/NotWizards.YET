@@ -22,18 +22,18 @@ new Accordion(accordions, {
   onOpen: function (currentElement) {
     currentElement.querySelector('button').classList.add('active');
     const arrowIcon = currentElement.querySelector('.arrow use');
-    arrowIcon.setAttribute('href', '/img/symbol-defs.svg#icon-arrow-up');
+    arrowIcon.setAttribute('href', './img/symbol-defs.svg#icon-arrow-up');
   },
   onClose: function (currentElement) {
     currentElement.querySelector('button').classList.remove('active');
     const arrowIcon = currentElement.querySelector('.arrow use');
-    arrowIcon.setAttribute('href', '/img/symbol-defs.svg#icon-arrow-down');
+    arrowIcon.setAttribute('href', './img/symbol-defs.svg#icon-arrow-down');
   },
 });
 
 const activeAccordion = document.querySelector('.accordion-element.is-active');
 const arrowIcon = activeAccordion.querySelector('.arrow use');
-arrowIcon.setAttribute('href', '/img/symbol-defs.svg#icon-arrow-up');
+arrowIcon.setAttribute('href', './img/symbol-defs.svg#icon-arrow-up');
 
 ////////////////////////SWIPER CODE//////////////////////////////
 
