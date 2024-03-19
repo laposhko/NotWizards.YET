@@ -1,3 +1,19 @@
+:root {
+  --white-text-color: #FAFAFA;
+  --arrow-color: #3B3B3B;
+  --accent-color: #ED3B44;
+  --background-color: #1C1D20;
+  --cards-background-color: #242527;
+  --middle-gradient-color:#69292d;
+  --button-border-color:rgba(250, 250, 250, 0.2);
+  --grey-title-color: rgba(250, 250, 250, 0.4);
+  --grey-text-color:#fafafa99;
+  --grey-field-color:rgba(250, 250, 250, 0.6);
+  --modal-border-color:rgba(250, 250, 250, 0.1);
+  --button-hover-color:#e0373f;
+  --succes-message-color: #3cbc81;
+  --not-succes-message-color:#e74a3b;
+}
  /* ==========MOBYLE STYLES======== */
  .order {
     padding-top: 32px;
@@ -26,11 +42,11 @@
     line-height: 100%;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    color: #fafafa;
+    color: var(--white-text-color);
   }
   
   .text-order {
-    color: #ed3b44;
+    color: var(--accent-color);
   }
   
   .text-title {
@@ -51,6 +67,40 @@
     flex-direction: column;
     gap: 16px;
   }
+
+  .email-field:valid,
+  .email-field:hover:valid  {
+    border-bottom: 1px solid var(--succes-message-color);
+  }
+
+  .email-field:invalid,
+  .email-field:hover:invalid {
+    border-bottom: 1px solid var(--not-succes-message-color);
+  }
+
+  .error {
+    display: block;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    color: var(--not-succes-message-color);
+  }
+
+  .succes {
+    display: block;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    color: var(--succes-message-color);
+  }
+
+  .is-hidden {
+    display: none;
+  }
   
   .field{
     font-family: inherit;
@@ -60,28 +110,29 @@
     font-size: 16px;
     line-height: 150%;
     letter-spacing: -0.02em;
-    color: rgba(250, 250, 250, 0.6);
+    color: var(--grey-field-color);
     background-color: inherit;
     border: none;
-    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+    border-bottom: 1px solid var(--button-border-color);
+    outline: none;
   }
   
   .field:placeholder-shown {
     background-color: inherit;
     border: none; 
-    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+    border-bottom: 1px solid var(--button-border-color);
   }
   
   .field:focus-within {
     border: none; 
-    border-bottom: 1px solid rgba(250, 250, 250, 0.2);   
+    border-bottom: 1px solid var(--button-border-color);   
   }
   
   .field:hover,
   .field:focus,
   .field:active {
     border: none; 
-    border-bottom: 1px solid rgba(250, 250, 250, 0.2); 
+    border-bottom: 1px solid var(--button-border-color); 
   }
   
   .comments {
@@ -92,8 +143,8 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: #ed3b44;
-    color: #fafafa; 
+    background: var(--accent-color);
+    color: var(--white-text-color); 
     font-weight: 500;
     font-size: 16px;
     letter-spacing: -0.02em;
@@ -105,10 +156,15 @@
   
   .order-button:hover,
   .order-button:focus {
-    background-color: #e0373f;
+    background-color: var(--button-hover-color);
     scale: 1.05;
   }
   
+  .order-button:disabled {
+    background-color: var(--accent-color);
+    scale: 1;
+    opacity: 0.5;
+  }
   .address-list {
     display: flex; 
     flex-direction: row;
@@ -120,15 +176,15 @@
     font-weight: 500;
     font-size: 14px;
     letter-spacing: -0.02em;
-    color: #fafafa;
-    border: 1px solid rgba(250, 250, 250, 0.2);
+    color: var(--white-text-color);
+    border: 1px solid var(--button-border-color);
     border-radius: 60px;
     padding: 10px 12px;
     transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .adress-item:hover {
-    border: 1px solid #fafafa;
+    border: 1px solid var(--white-text-color);
     scale: 1.05;
   }
   
@@ -148,6 +204,54 @@
     .order {
         background-image: url(../img/workTogether-img/elements-mob@2x.png);
     }  
+  }
+
+  .modal {
+    background-color: var(--cards-background-color);
+    border: 1px solid var(--modal-border-color);
+    border-radius: 20px;
+    padding: 64px 32px;
+    width: 343px;
+    height: 276px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  .modal-message {
+    width: 279px;
+    height: 148px;
+  }
+
+  .modal-title {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--white-text-color);
+    margin-bottom: 20px;
+  }
+
+  .modal-text {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(250, 250, 250, 0.6);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .close-btn-icon {
+    fill: var(--white-text-color);
   }
   /* ==========MOBYLE STYLES======== */
   
@@ -229,6 +333,16 @@
         width: 176px;
         height: 55px;
     }
+
+    .modal {
+      width: 768px;
+      height: 636px;
+    }
+  
+    .modal-message {
+      width: 364px;
+      height: 118px;
+    }
   }
   
   @media screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -270,6 +384,12 @@
     .phone-item {
         width: 176px;
         height: 55px;
+    }
+
+    .modal {
+      padding: 64px;
+      width: 492px;
+      height: 246px;
     }
   }
   

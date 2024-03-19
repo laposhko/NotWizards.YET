@@ -4,12 +4,10 @@
 @import url('./about.css');
 @import url('./benefits.css');
 @import url('./covers.css');
+@import url('./projects.css');
 @import url('./faq.css');
 @import url('./reviews.css');
 @import url('./workTogether.css');
-
-/*  @import url('./projects.css'); 
- */
 
 :root {
   --white-text-color: #fafafa;
@@ -21,6 +19,8 @@
   --button-border-color: rgba(250, 250, 250, 0.2);
   --grey-title-color: rgba(250, 250, 250, 0.4);
   --grey-text-color: #fafafa99;
+  --text-shadow: rgba(0, 0, 0, 0.25);
+  --icon-accent: #450306;
 }
 
 .visually-hidden {
