@@ -33,7 +33,6 @@
 }
 .projects-tags-list {
   color: var(--background-color);
-  font-family: Inter Tight;
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
@@ -54,7 +53,6 @@
 }
 .projects-card-title {
   color: var(--background-color);
-  font-family: Inter Tight;
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
@@ -68,7 +66,6 @@
   align-items: center;
   padding: 13px 32px;
   color: var(--white-text-color);
-  font-family: Inter Tight;
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
@@ -122,9 +119,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 704px;
-  }
   .projects {
     padding-top: 48px;
     padding-bottom: 48px;
@@ -168,9 +162,6 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .container {
-    width: 1376px;
-  }
   .projects {
     padding-top: 70px;
     padding-bottom: 82px;
