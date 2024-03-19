@@ -6,10 +6,12 @@ const accordions = Array.from(
 );
 new Accordion(accordions, {
   elementClass: 'item',
-  triggerClass: 'btn-arrow-toggl',
+  triggerClass: 'item-box',
   panelClass: 'item-text',
   onOpen: function (currentElement) {
-    console.log(currentElement.querySelector('svg'));
-    currentElement.querySelector('button').classList.add('.is-rotate');
+    currentElement.querySelector('.btn-arrow-toggl').classList.add('active');
+  },
+  onClose: function (currentElement) {
+    currentElement.querySelector('.btn-arrow-toggl').classList.remove('active');
   },
 });

@@ -1,25 +1,227 @@
+/* ////////////////MOBILE STYLES////////////////////////*/
+
 .about-section {
-    padding-top: 96px;
-    padding-bottom: 82px;
-    background-color: #1C1D20;
-    color: #FAFAFA;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: var(--background-color);
+    color: var(--white-text-color);
 }
 
 .container-about {
-    padding-top: 48px;
+    margin-top: 48px;
 }
 
 .pictures-about {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 16px;   
 }
 
 .main-about-block {
-    width: 680px;
-    height: 700px;
-    background-color: #242527;
+    width: 343px;
+    height: 500px;
+    background-color: var(--cards-background-color);
     border-radius: 24px;
+}
+
+.main-about-block:first-child {
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.my-photo {
+    object-fit: cover;
+    width: 343px;
+    height: 500px; 
+    border-radius: 24px;
+}
+
+.main-about-info {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.functional-word {
+    color: var(--accent-color);
+}
+
+.website-word {
+    color: rgba(250, 250, 250, 0.4);
+}
+
+/* ACCORDION STYLES */
+
+.accordion-element:not(:first-child){
+    margin-top: 20px;
+}
+
+.accordion-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+}
+
+.accordion-header {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+}
+
+.accordion-title .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid var(--button-border-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.accordion-description {
+    height: 0;
+    margin-top: 12px;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+
+.accordion-description.active {
+   height: auto;
+}
+
+.accordion-title svg {
+    transform: rotate(0deg);
+    transition: transform 0.2s ease; 
+}
+
+.accordion-title.active svg {
+    transform: rotate(180deg); 
+}
+
+.ac-text-about-me:first-child {
+    margin-bottom: 32px;
+}
+
+.ac-text-about-me {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.accordeon-text-content{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.accordeon-text-content:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.accordion-element::after {
+  content: "";
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  border-bottom: 1px solid var(--button-border-color);
+  border-radius: 2px;
+}
+
+/* SWIPER STYLES */
+
+.swiper-container {
+    display: flex;
+    margin-top: 32px;
+}
+
+.skills-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.skills-swiper-wrapper  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.skills-swiper-wrapper .skill-slide {
+    display: flex;
+    width: 130px;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter Tight', sans-serif;
+    border: 1px solid var(--button-border-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skills-swiper-wrapper .skill-slide:hover {
+    background-color: var(--accent-color);
+    border-color: transparent;
+}
+
+.swipe-next-button .button-next {
+    display: flex;
+    margin-left: 55px;
+    margin-top: 51px;
+    margin-bottom: 51px;
+    width: 28px;
+    height: 28px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.button-next .svg-arrow-right {
+    fill: none;
+    stroke: var(--arrow-color);
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-next .svg-arrow-right:hover{
+    stroke: var(--white-text-color);
+}
+
+/* ////////////////TABLET STYLES////////////////////////*/
+@media screen and (min-width: 768px) {
+
+.about-section {
+    padding-top: 96px;
+    padding-bottom: 82px;
+}
+
+.container-about {
+    margin-top: 64px;
+}
+
+.main-about-block {
+    width: 704px;
+    height: 700px;
+}
+
+.my-photo {
+    width: 704px;
+    height: 700px;
+}
+
+.main-about-info {
+    font-size: 36px;
 }
 
 .main-about-block:first-child {
@@ -28,127 +230,86 @@
     padding-right: 64px;
 }
 
+.accordion-element:not(:first-child){
+    margin-top: 32px;
+}
+
+.accordion-title .arrow {
+    width: 40px;
+    height: 40px;
+}
+
+.accordion-description {
+    margin-top: 8px;
+}
+
+.ac-text-about-me:first-child {
+    margin-bottom: 16px;
+}
+
+.accordion-element::after {
+  margin-top: 32px;
+}
+
+.swiper-container {
+    margin-top: 64px;
+}
+
+.skills-swiper-wrapper .skill-slide {
+    width: 200px;
+    height: 200px;
+}
+
+.swipe-next-button .button-next {
+    margin-left: 64px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 40px;
+    height: 40px;
+}
+
+}
+/* ////////////////DESKTOP STYLES////////////////////////*/
+@media screen and (min-width: 1440px) {
+.about-section {
+    padding-top: 96px;
+    padding-bottom: 82px;
+    }
+
+.container-about {
+    margin-top: 32px;
+}
+
+.pictures-about {
+    flex-direction: row;
+}
+.main-about-block {
+    width: 680px;
+    height: 700px;
+}
 .my-photo {
     width: 680px;
     height: 700px;
 }
 
-.main-about-info {
-    font-size: 34px;
-    text-transform: uppercase;
-}
-
-.functional-word {
-    color: #ED3B44;
-}
-
-.website-word {
-    color: rgba(250, 250, 250, 0.4);
-}
-
-.accordion-element:not(:first-child){
-    margin-top: 32px;
-}
-
-.accordion-title {
-    position: relative;
-    line-height: 1.5;
-    letter-spacing: -0.2;
-    text-transform: uppercase;
-    color: rgba(250, 250, 250, 0.4);
-}
-
-.accordion-title .arrow {
-    position: absolute;
-    transform: translateY(-50%);
-    top: 50%;
-    right: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 50%;
-    cursor: pointer;
-}
-
 .accordion-description {
-    height: 0;
-    margin-top: 8px;
-    gap: 10px;
     padding-left: 696px;
     padding-right: 68px;
-    overflow: hidden;
-    transition: height 300ms ease;
 }
 
-.accordion-description.active {
-   height: auto;
-}
-
-.accordion-element::after {
-  content: "";
-  display: block;
-  width: 100%;
-  margin-top: 32px;
-  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 2px;
+.ac-text-about-me:first-child {
+    margin-bottom: 32px;
 }
 
 .swiper-container {
-    padding-top: 96px;
-    position: relative;
+    margin-top: 96px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
-.skills-container {
-  width: 90%;
-  height: auto;
-  overflow: hidden;
+.swipe-next-button .button-next {
+    margin-left: 72px;
+    margin-top: 90px;
+    margin-bottom: 90px;
 }
-
-.skills-swiper-wrapper .skill-slide {
-    display: flex;
-    width: 200px;
-    height: 200px;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--button-border-color);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.skills-swiper-wrapper .skill-slide:hover {
-    background-color: #ED3B44;
-    border-color: transparent;
-}
-
-.swiper-button-next {
-    display: flex;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    right: 0;
-    top: 67%;
-    transform: translateY(-50%);
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    border: transparent;
-    cursor: pointer;
-    z-index: 1;
-}
-
-.icon-arrow-narrow-right {
-    fill: none;
-    stroke: #3B3B3B;
-    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-arrow-narrow-right:hover{
-    stroke: #FAFAFA
 }
