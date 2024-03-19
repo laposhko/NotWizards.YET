@@ -10,6 +10,7 @@ let observer = new IntersectionObserver( function (entries) {
 			coversSection.classList.remove('in-viewport')
 		}
 	}	
+
 });
 
 observer.observe(coversSection);

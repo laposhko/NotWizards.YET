@@ -130,6 +130,11 @@
   right: -100%;
   transition: right 0.5s ease;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .backdrop {
+    background-image: url('../img/header/mobmenu-background@2x.png');
+  }
+}
 .backdrop--show {
   right: 0;
 }
