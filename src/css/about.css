@@ -90,11 +90,20 @@
     height: 0;
     margin-top: 12px;
     overflow: hidden;
-    transition: height 300ms ease;
+    transition: height 0.5s ease;
 }
 
 .accordion-description.active {
    height: auto;
+}
+
+.accordion-title svg {
+    transform: rotate(0deg);
+    transition: transform 0.5s ease; 
+}
+
+.accordion-title.active svg {
+    transform: rotate(180deg); 
 }
 
 .ac-text-about-me:first-child {
