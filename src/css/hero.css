@@ -3,7 +3,7 @@
   padding-top: 281px;
   padding-bottom: 32px;
   background-image: url(../img/hero/background-mobile.png);
-  background-size: 100% 100%;
+  background-size: 375px 100%;
   background-repeat: no-repeat;
 }
 
@@ -57,6 +57,7 @@
 @media screen and (min-width: 768px) {
   .hero {
     background-image: url(../img/hero/background-tablet.png);
+    background-size: 768px 100%;
     padding-top: 300px;
     padding-bottom: 32px;
   }
@@ -88,6 +89,7 @@
 @media screen and (min-width: 1440px) {
   .hero {
     background-image: url(../img/hero/background-desktop.png);
+    background-size: 1440px 100%;
   }
 
   .hero-title {
