@@ -103,11 +103,12 @@
 }
 
 /* TABLET */
-.benefits-container {
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
+
 @media screen and (min-width: 768px) {
+  .benefits-container {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
   .benefits-list {
     width: 704px;
     display: flex;
