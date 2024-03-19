@@ -14,7 +14,7 @@ const accordions = accordionContainer.map(container => container.querySelector('
 new Accordion(accordions, {
   showMultiple: true,
   elementClass: 'accordion-element',
-  triggerClass: 'arrow',
+  triggerClass: 'accordion-title',
   panelClass: 'accordion-description',
   openOnInit: [0],
   onOpen: function (currentElement) {
@@ -39,8 +39,8 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 
-const swiper = new Swiper('.skills-container', {
-    loop: true,
+const swiperAbout = new Swiper('.skills-container', {
+    loop: true ,
     direction: 'horizontal',
     allowSlideNext: true,
     setWrapperSize: true,
@@ -48,19 +48,26 @@ const swiper = new Swiper('.skills-container', {
     simulateTouch: true,
     grabCursor: true,
     spaceBetween: 0,
-    speed: 300,
+    speed: 1000,
     navigation: {
-        nextEl: '.swiper-button-next',
+        nextEl: '.swipe-next-button',
     },
-    slidesPerView: 2,
     breakpoints: {
-        768: {
-            slidesPerView: 3,
-        },
-        1440: {
-            slidesPerView: 6,
-        },
+    320: {
+        slidesPerView: 2,
+         
     },
+    375: {
+        slidesPerView: 2,
+    
+    },
+    768: {
+        slidesPerView: 3,
+    },
+    1440: {
+        slidesPerView: 6,
+    },
+  },
     keyboard: {
         enabled: true,
     },
