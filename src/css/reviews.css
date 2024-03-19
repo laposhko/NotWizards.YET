@@ -108,12 +108,13 @@
 }
 
 .error-title {
-  font-size: 26px;
+  font-size: 18px;
   color: #ffffff;
 }
 
 .error-text-describe {
   color: #fafafab3;
+  text-align: center;
 }
 
 .hide {
@@ -142,6 +143,10 @@
     width: 32px;
     height: 32px;
   }
+
+  .error-title {
+    font-size: 20px;
+  }
 }
 
 /* Laptop styles */
@@ -154,5 +159,9 @@
 
   .review-item {
     width: 332px;
+  }
+
+  .error-title {
+    font-size: 24px;
   }
 }
