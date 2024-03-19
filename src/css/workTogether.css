@@ -132,13 +132,18 @@
   .field:focus,
   .field:active {
     border: none; 
-    border-bottom: 1px solid var(--button-border-color); 
+    border-bottom: 1px solid var(--not-succes-message-color); 
+    scale: 1.05;
   }
   
   .comments {
     resize: none;
   }
   
+  .comments:focus,
+  .comments:active {
+    border-bottom: 1px solid var(--succes-message-color);
+  }
   .order-button{
     width: 100px;
     height: 100px;
@@ -251,7 +256,7 @@
   }
 
   .close-btn-icon {
-    fill: var(--white-text-color);
+    stroke: var(--white-text-color);
   }
   /* ==========MOBYLE STYLES======== */
   
@@ -333,15 +338,15 @@
         width: 176px;
         height: 55px;
     }
-
-    .modal {
-      width: 768px;
-      height: 636px;
-    }
   
     .modal-message {
       width: 364px;
       height: 118px;
+    }
+
+    .close-btn-icon {
+      width: 24px;
+      height: 24px;
     }
   }
   

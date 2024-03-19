@@ -26,7 +26,12 @@ function changeInput(event) {
         textValid.classList.add ('is-hidden');
         emailInput.reportValidity();
     }
-    else {
+    else if (emailInput.value === '') {
+      orderBtn.disabled = true;
+      textInvalid.classList.add('is-hidden');
+      textValid.classList.add('is-hidden');
+    }
+    else if (emailInput.checkValidity()) {
         orderBtn.disabled = false;
         textInvalid.classList.add ('is-hidden');
         textValid.classList.remove ('is-hidden');
@@ -38,21 +43,6 @@ emailInput.addEventListener('focus', changeInput);
 emailInput.addEventListener('input', changeInput);
 emailInput.addEventListener('blur', changeInput);
 
-
-// // перевірка на наявність значення в input ЛАМАЄ ЛОГІКУ ЗАПИТУ
-// function notChangeInput(event) {
-//         console.log(emailInput.value);
-//         if (!emailInput.value) {
-//             orderBtn.disabled = false;
-//             textInvalid.classList.add ('is-hidden');
-//             textValid.classList.add ('is-hidden');
-//         } else {
-//             orderBtn.disabled = true;
-//         }
-//     }
-// emailInput.addEventListener ('focus', notChangeInput);
-// emailInput.addEventListener ('input', notChangeInput);
-// emailInput.addEventListener ('blur', notChangeInput);
 
 
 // ЗАПИТ
@@ -69,7 +59,6 @@ const addNewUser = async (event) => {
             headers: {
               'Content-Type': 'application/json'
             }})
-        console.log(response.data)
          inst = basicLightbox.create(
             `<div class="modal">
             <button class="close-btn" id="close-btn" type="button">
@@ -89,7 +78,6 @@ const addNewUser = async (event) => {
         })
     }
     catch(error) {
-        console.log(error)
          inst = basicLightbox.create(
             `<div class="modal">
             <button class="close-btn" id="close-btn" type="button">
