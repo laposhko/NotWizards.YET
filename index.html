@@ -16,7 +16,7 @@
     <script type="module" crossorigin src="/NotWizards.YET/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/NotWizards.YET/assets/vendor-68567733.js">
     <link rel="stylesheet" href="/NotWizards.YET/assets/vendor-c6903f92.css">
-    <link rel="stylesheet" href="/NotWizards.YET/assets/index-2450b123.css">
+    <link rel="stylesheet" href="/NotWizards.YET/assets/index-df2e9a0a.css">
   </head>
   <body>
     <header class="header">
@@ -148,9 +148,9 @@
             </p>
            </li>
            <li class="main-about-block">
-            <img class="my-photo" srcset="/NotWizards.YET/assets/mobile-about-61c8dce7.png 343w, /NotWizards.YET/assets/tablet-about-8a4bb94b.png 704w, /NotWizards.YET/assets/desktop-about-9f4ba5df.png 680w, /NotWizards.YET/assets/mobile-about@2x-f6cbd3f0.png 686w, /NotWizards.YET/assets/tablet-about@2x-449596ac.png 1408w, /NotWizards.YET/assets/desktop-about@2x-fa34dd74.png 1360w"
-                sizes="(min-width: 1440px) 680px, (min-width: 768px) 704px, (max-width: 767px) 343px" src="/NotWizards.YET/assets/desktop-about-9f4ba5df.png"
-                alt="me" />
+            <img class="my-photo" 
+            srcset="/NotWizards.YET/assets/mobile-about-61c8dce7.png 343w, /NotWizards.YET/assets/tablet-about-8a4bb94b.png 704w, /NotWizards.YET/assets/desktop-about-9f4ba5df.png 680w, /NotWizards.YET/assets/mobile-about@2x-f6cbd3f0.png 686w, /NotWizards.YET/assets/tablet-about@2x-449596ac.png 1408w, /NotWizards.YET/assets/desktop-about@2x-fa34dd74.png 1360w" 
+            sizes="(min-width: 1440px) 680px, (min-width: 768px) 704px, (max-width: 767px) 343px" src="/NotWizards.YET/assets/desktop-about-9f4ba5df.png" alt="me"/>
            </li>
         </ul>
     </div>
@@ -158,22 +158,21 @@
         <ul class="accordion-list">
             <li class="accordion-element">
                 <div class="accordion-title">
-                <h3>About me</h3>
+                <h3 class="accordion-header">About me</h3>
                 <button class="arrow" type="button">
                     <svg class="arrow-down" width="20" height="20">
-                    <use href="../img/symbol-defs.svg#icon-arrow-down"></use>
+                    <use href="/NotWizards.YET/assets/symbol-defs-c54896ce.svg#icon-arrow-down"></use>
                     </svg>
                 </button>
                 </div>
                 <div class="accordion-description">
-                <p class="ac-text">
+                <p class="ac-text-about-me">
                     I am Lloyd Jefferson, a talented programmer with extensive expertise in software development. I have an understanding of
                     different programming languages and technologies, always ready to improve my skills. I always follow the latest trends
                     and look for unconventional, creative solutions to problems. I have a high level of analytical skills and am able to
                     effectively solve even the most difficult tasks encountered on the way.
-                </p>
-                <p class="ac-text">
-                   Able to work both independently and in a team. I can effectively cooperate with colleagues, exchanging ideas and finding
+
+                <p class = "ac-text-about-me"> Able to work both independently and in a team. I can effectively cooperate with colleagues, exchanging ideas and finding
                     optimal solutions. Professional maturity allows you to calmly cope with challenges and stressful situations, while
                     maintaining a high quality of work. I am always looking for opportunities for self-improvement. I actively study new
                     technologies and practices to stay abreast of the latest innovations. I have a strong understanding of various
@@ -183,34 +182,32 @@
             </li>
             <li class="accordion-element">
                 <div class="accordion-title">
-                <h3>Role
+                <h3 class="accordion-header">Role</h3>
                     <button class="arrow" type="button">
                         <svg class="arrow-down" width="20" height="20">
-                            <use href="../img/symbol-defs.svg#icon-arrow-down"></use>
+                            <use href="/NotWizards.YET/assets/symbol-defs-c54896ce.svg#icon-arrow-down"></use>
                         </svg>
                     </button>
-                </h3>
                 </div>
                 <div class="accordion-description">
-                <p class="ac-text">Frontend development</p>
-                <p class="ac-text">HeadlessCMS,Wordpress</p>
-                <p class="ac-text">Blender(enjoy)</p>
+                <p class="accordeon-text-content">Frontend development</p>
+                <p class="accordeon-text-content">HeadlessCMS,Wordpress</p>
+                <p class="accordeon-text-content">Blender(enjoy)</p>
                 </div>
             </li>
             <li class="accordion-element"> 
                 <div class="accordion-title">
-                <h3>Education
+                <h3 class="accordion-header">Education</h3>
                         <button class="arrow" type="button">
                             <svg class="arrow-down" width="20" height="20">
-                            <use href="../img/symbol-defs.svg#icon-arrow-down"></use>
+                            <use href="/NotWizards.YET/assets/symbol-defs-c54896ce.svg#icon-arrow-down"></use>
                             </svg>
                         </button>
-                </h3>
                 </div>
                 <div class="accordion-description">
-                   <p class="ac-text">2018 - 2019 / Frontend Development Diploma,   GoIT IT School, New York </p>
-                    <p class="ac-text">2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York </p>
-                    <p class="ac-text">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
+                   <p class="accordeon-text-content">2018 - 2019 / Frontend Development Diploma, GoIT IT <br>School, New York </p>
+                    <p class="accordeon-text-content">2019 - 2020 / Advanced Web Development Certificate, GoIT IT<br> School, New York </p>
+                    <p class="accordeon-text-content">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
                 </div>
             </li>
         </ul>
@@ -219,29 +216,32 @@
         <div class = "skills-container"> 
           <ul class="skills-swiper-wrapper swiper-wrapper"> 
             <li class="swiper-slide skill-slide">
-                <h3 class="skill-name">HTML/CSS</h3>
+                <p class="skill-name">HTML/CSS</p>
             </li>
             <li class="swiper-slide skill-slide">
-                <h3 class="skill-name">JavaScript</h3>
+                <p class="skill-name">JavaScript</p>
             </li>
             <li class="swiper-slide skill-slide">
-                <h3 class="skill-name">React</h3>
+                <p class="skill-name">React</p>
             </li>
             <li class="swiper-slide skill-slide">
-                <h3 class="skill-name">Node.js</h3>
+                <p class="skill-name">Node.js</p>
             </li>
             <li class="swiper-slide skill-slide">
-                <h3 class="skill-name">React Native</h3>
+                <p class="skill-name">React Native</p>
             </li>
             <li class="swiper-slide skill-slide">
-                <h3 class="skill-name">Soft Skills</h3>
+                 <p class="skill-name">Figma</p>
+             </li>
+            <li class="swiper-slide skill-slide">
+                <p class="skill-name">Soft Skills</p>
             </li>
           </ul>
         </div>
-        <div class="swiper-button-next">
+        <div class="swipe-next-button">
           <button class="button-next" type="button">
-            <svg class="icon-arrow-narrow-right" width="40" height="40">
-                <use href="../img/symbol-defs.svg#icon-arrow-narrow-right"></use>
+            <svg class="svg-arrow-right" width="40" height="40">
+                <use href="/NotWizards.YET/assets/symbol-defs-c54896ce.svg#icon-arrow-narrow-right"></use>
             </svg>
           </button> 
         </div>
