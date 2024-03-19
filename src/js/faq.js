@@ -10,10 +10,10 @@ new Accordion(accordions, {
   panelClass: 'item-text',
   onOpen: function (currentElement) {
     const arrowIcon = currentElement.querySelector('.btn-arrow-toggl use');
-    arrowIcon.setAttribute('href', '/img/symbol-defs.svg#icon-arrow-up');
+    arrowIcon.setAttribute('href', 'img/symbol-defs.svg#icon-arrow-up');
   },
   onClose: function (currentElement) {
     const arrowIcon = currentElement.querySelector('.btn-arrow-toggl use');
-    arrowIcon.setAttribute('href', '/img/symbol-defs.svg#icon-arrow-down');
+    arrowIcon.setAttribute('href', 'img/symbol-defs.svg#icon-arrow-down');
   },
 });
