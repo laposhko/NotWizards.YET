@@ -1,7 +1,7 @@
 /* MOBILE */
 
 .benefits-container {
-  padding-top: 64px;
+  padding-top: 32px;
   padding-bottom: 32px;
 }
 
@@ -82,13 +82,13 @@
   width: 187px;
   height: 55px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: -0.02em;
   color: var(--white-text-color);
   background-color: transparent;
-  text-align: left;
-  text-wrap: nowrap;
+  text-align: center;
 }
+
 .link-order:hover {
   background-color: var(--accent-color);
 }
@@ -103,7 +103,10 @@
 }
 
 /* TABLET */
-
+.benefits-container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
 @media screen and (min-width: 768px) {
   .benefits-list {
     width: 704px;
@@ -117,6 +120,10 @@
 
 /* DESKTOP */
 @media screen and (min-width: 1440px) {
+  .benefits-container {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
   .benefits-list {
     width: 680px;
     margin-left: 696px;
