@@ -18,20 +18,15 @@ new Accordion(accordions, {
   panelClass: 'accordion-description',
   openOnInit: [0],
   onOpen: function (currentElement) {
-      currentElement.querySelector('button').classList.add('active');
-      const arrowIcon = currentElement.querySelector('.arrow use');
-      arrowIcon.setAttribute('href', './img/symbol-defs.svg#icon-arrow-up')
-
+      currentElement.querySelector('.accordion-title').classList.add('active');
     },
     onClose: function (currentElement) {
-        currentElement.querySelector('button').classList.remove('active');
-        const arrowIcon = currentElement.querySelector('.arrow use');arrowIcon.setAttribute('href', './img/symbol-defs.svg#icon-arrow-down');
+        currentElement.querySelector('.accordion-title').classList.remove('active');
     },
 });
 
-const activeAccordion = document.querySelector('.accordion-element.is-active');
-const arrowIcon = activeAccordion.querySelector('.arrow use');
-arrowIcon.setAttribute('href', './img/symbol-defs.svg#icon-arrow-up');
+const firstAccordionTitle = accordions[0].querySelector('.accordion-title');
+firstAccordionTitle.classList.add('active');
 
 ////////////////////////SWIPER CODE//////////////////////////////
 
