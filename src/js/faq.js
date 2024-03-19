@@ -5,6 +5,7 @@ const accordions = Array.from(
   document.querySelectorAll('.accordion-container')
 );
 new Accordion(accordions, {
+  showMultiple: true,
   elementClass: 'item',
   triggerClass: 'item-box',
   panelClass: 'item-text',
