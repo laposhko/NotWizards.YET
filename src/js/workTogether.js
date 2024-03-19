@@ -38,7 +38,7 @@ function changeInput(event) {
         emailInput.reportValidity();
     }
 };
-// слухачі
+// слухачі на інпут
 emailInput.addEventListener('focus', changeInput);
 emailInput.addEventListener('input', changeInput);
 emailInput.addEventListener('blur', changeInput);
