@@ -22,6 +22,7 @@
    
 .covers-list {
     position: absolute;
+    top: 24px;
     z-index: 99;
     display: flex;
     flex-direction: column;
