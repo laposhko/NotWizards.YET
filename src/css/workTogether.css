@@ -332,8 +332,9 @@
     height: 118px;
   }
 
-  .close-btn {
-   font-size: 24px;
+  .close-btn-icon {
+    width: 24px;
+    height: 24px;
   }
 }
 
