@@ -60,7 +60,7 @@ const addNewUser = async event => {
       `<div class="modal">
             <button class="close-btn" id="close-btn" type="button">
               <svg class="close-btn-icon" width="22" height="22">
-                <use href="https://github.com/laposhko/NotWizards.YET/blob/main/src/img/symbol-defs.svg#icon-x"></use>
+                <use href="img/symbol-defs.svg#icon-x"></use>
               </svg> 
             </button>
               <div class modal-message">
