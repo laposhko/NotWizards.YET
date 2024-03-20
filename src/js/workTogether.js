@@ -59,7 +59,9 @@ const addNewUser = async event => {
     inst = basicLightbox.create(
       `<div class="modal">
             <button class="close-btn" id="close-btn" type="button">
-            ×
+            <svg class="close-btn-icon" width="22" height="22">
+              <use href="${./img/symbol-defs.svg}#icon-x"></use>
+            </svg> 
             </button>
               <div class modal-message">
                 <h3 class="modal-title">${response.data.title}</h3>
@@ -76,7 +78,9 @@ const addNewUser = async event => {
     inst = basicLightbox.create(
       `<div class="modal">
             <button class="close-btn" id="close-btn" type="button">
-            ×
+            <svg class="close-btn-icon" width="22" height="22">
+              <use href="${./img/symbol-defs.svg}#icon-x"></use>
+            </svg> 
             </button>
              <div class "modal-message">
                <h3 class="modal-title">Oops...something went wrong</h3>
