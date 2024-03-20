@@ -238,13 +238,12 @@
   position: absolute;
   top: 20px;
   right: 20px;
+  font-size: 22px;
+  color: var(--white-text-color);
 }
 
-.close-btn-icon {
-  stroke: var(--white-text-color);
-}
-.close-btn-icon:hover {
-  stroke: var(--accent-color);
+.close-btn:hover {
+  color: var(--accent-color);
 }
 /* ==========MOBYLE STYLES======== */
 
@@ -332,9 +331,8 @@
     height: 118px;
   }
 
-  .close-btn-icon {
-    width: 24px;
-    height: 24px;
+  .close-btn {
+   font-size: 24px;
   }
 }
 
