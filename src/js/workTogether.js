@@ -1,6 +1,7 @@
 import * as basicLightbox from 'basiclightbox';
 import 'basiclightbox/dist/basicLightbox.min.css';
 import axios from 'axios';
+import svg from '../img/symbol-defs.svg'
 
 const emailInput = document.getElementById('user-email');
 const commentInput = document.getElementById('user-comments');
@@ -60,7 +61,7 @@ const addNewUser = async event => {
       `<div class="modal">
             <button class="close-btn" id="close-btn" type="button">
             <svg class="close-btn-icon" width="22" height="22">
-              <use href="${./img/symbol-defs.svg}#icon-x"></use>
+              <use href="${svg}#icon-x"></use>
             </svg> 
             </button>
               <div class modal-message">
@@ -79,7 +80,7 @@ const addNewUser = async event => {
       `<div class="modal">
             <button class="close-btn" id="close-btn" type="button">
             <svg class="close-btn-icon" width="22" height="22">
-              <use href="${./img/symbol-defs.svg}#icon-x"></use>
+              <use href="${svg}#icon-x"></use>
             </svg> 
             </button>
              <div class "modal-message">

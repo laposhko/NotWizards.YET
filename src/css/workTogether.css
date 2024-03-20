@@ -245,6 +245,7 @@
 }
 .close-btn-icon:hover {
   stroke: var(--accent-color);
+  scale: 1.2;
 }
 /* ==========MOBYLE STYLES======== */
 
