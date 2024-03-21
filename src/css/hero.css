@@ -154,7 +154,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
 
   .hero-contacts {
     gap: 0 8px;
-    /* margin: 187px 0 0 auto; */
     width: 475px;
   }
 
@@ -203,9 +202,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     width: 1084px;
   }
 
-  /* .hero-contacts {
-    margin-top: 243px;
-  } */
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
