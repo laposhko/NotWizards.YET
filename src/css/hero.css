@@ -7,6 +7,16 @@
   background-repeat: no-repeat;
 }
 
+.hero label {
+  width: 500px;
+  height: 300px;
+  display: block;
+  position: relative;
+  background-color: var(--white-text-color);
+  border-radius: 200px;
+  border: 1px solid var(--button-border-color);
+}
+
 .hero-title {
   text-transform: uppercase;
   font-weight: 500;
