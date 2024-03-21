@@ -6,4 +6,3 @@ import './js/projects';
 import './js/faq';
 import './js/covers';
 import './js/workTogether';
-import './js/cursor-animation';
