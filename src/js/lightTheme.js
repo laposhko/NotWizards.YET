@@ -7,6 +7,5 @@ function buttonSwitchHandler() {
   body.classList.toggle('light-theme');
 
   const mobileMenuBg = document.querySelector('.backdrop');
-  mobileMenuBg.style.backgroundImage =
-    'url(url(/img/header/mobile-menu-white.png))';
+  mobileMenuBg.classList.toggle('hero-wite');
 }

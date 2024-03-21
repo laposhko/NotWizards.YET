@@ -7,6 +7,10 @@
   background-repeat: no-repeat;
 }
 
+div.hero-wite {
+  background-image: url(../img/header/mobile-menu-white.png)
+}
+
 .hero-buttons {
   margin: 212px 0 0 0;
   display: flex;
