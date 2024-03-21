@@ -52,6 +52,60 @@
   gap: 16px;
 }
 
+/* ==========MOBYLE STYLES======== */
+.order {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-image: url(../img/workTogether-img/elements-mob.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.title-container {
+  display: flex;
+  gap: 8px;
+  position: relative;
+}
+
+.order-image {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+}
+
+.order-title {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+
+.text-order {
+  color: var(--accent-color);
+}
+
+.text-title {
+  position: absolute;
+  top: 48px;
+  left: 0;
+}
+
+.order-form {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.field-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .email-field:valid,
 .email-field:hover:valid {
   border-bottom: 1px solid var(--succes-message-color);
@@ -243,6 +297,11 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
 .close-btn-icon {
   stroke: var(--white-text-color);
+}
+
+.close-btn-icon:hover {
+  stroke: var(--accent-color);
+  scale: 1.2;
 }
 
 /* ==========MOBYLE STYLES======== */
