@@ -7,8 +7,8 @@
   background-repeat: no-repeat;
 }
 
-div.hero-wite {
-  background-image: url(../img/header/mobile-menu-white.png)
+section.hero-white {
+  background-image: url(../img/hero/mob-background-wite-min.png);
 }
 
 .hero-buttons {
@@ -106,6 +106,10 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
   .hero {
     background-image: url(../img/hero/background-mobile@2x.png);
   }
+
+  section.hero-white {
+    background-image: url(../img/hero/mob-wite@2x-min.png);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -114,6 +118,10 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
     background-size: 768px 100%;
     padding-top: 300px;
     padding-bottom: 32px;
+  }
+
+  section.hero-white {
+    background-image: url(../img/hero/background-tablet.png);
   }
 
   .hero-buttons {
@@ -168,12 +176,20 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
   .hero {
     background-image: url('../img/hero/background-tablet@2x.png');
   }
+
+  section.hero-white {
+    background-image: url(../img/hero/tablet-menu-white@2x-min.png);
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .hero {
     background-image: url(../img/hero/background-desktop.png);
     background-size: 1440px 100%;
+  }
+
+  section.hero-white {
+    background-image: url(../img/hero/desktop-background-white.png)
   }
 
   .hero-buttons {
@@ -197,5 +213,9 @@ screen and (min-resolution: 2dpi) and (min-width: 1440px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
   .hero {
     background-image: url('../img/hero/background-desktop@2x.png');
+  }
+
+  section.hero-white {
+    background-image: url(../img/hero/desktop-background-white@2x-min.png);
   }
 }
