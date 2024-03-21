@@ -21,9 +21,11 @@
   --grey-text-color: #fafafa99;
   --text-shadow: #fafafa40;
   --icon-accent: #450306;
+  --succes-message-color: #3cbc81;
+  --not-succes-message-color: #e74a3b;
 }
 
-.light-theme{
+.light-theme {
   --white-text-color: #090909;
   --arrow-color: #131212;
   --accent-color: #ed3b44;
