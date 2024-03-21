@@ -148,7 +148,7 @@
   font-size: 16px;
   line-height: 150%;
   letter-spacing: -0.02em;
-  color: var(--grey-field-color);
+  color: var(--grey-text-color);
   background-color: inherit;
   border: none;
   border-bottom: 1px solid var(--button-border-color);
