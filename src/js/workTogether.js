@@ -1,7 +1,7 @@
 import * as basicLightbox from 'basiclightbox';
 import 'basiclightbox/dist/basicLightbox.min.css';
 import axios from 'axios';
-import svg from '../img/symbol-defs.svg'
+import svg from '../img/symbol-defs.svg';
 
 const emailInput = document.getElementById('user-email');
 const commentInput = document.getElementById('user-comments');
@@ -71,6 +71,8 @@ const addNewUser = async event => {
           </div>`
     );
     inst.show();
+    document.querySelector('.basicLightbox').style.height = '100%';
+
     const closeBtn = document.getElementById('close-btn');
     closeBtn.addEventListener('click', () => {
       inst.close();
@@ -90,6 +92,8 @@ const addNewUser = async event => {
           </div>`
     );
     inst.show();
+    document.querySelector('.basicLightbox').style.height = '100%';
+
     const closeBtn = document.getElementById('close-btn');
     closeBtn.addEventListener('click', () => {
       inst.close();
@@ -104,8 +108,8 @@ const addNewUser = async event => {
 form.addEventListener('submit', addNewUser);
 
 document.addEventListener('keydown', event => {
-    if (event.key === 'Escape') {
-      inst.close();
+  if (event.key === 'Escape') {
+    inst.close();
   }
 });
 
