@@ -48,20 +48,6 @@
   color: var(--accent-color);
   scale: 1.2;
 }
-
-@media screen and (min-width: 768px) {
-  .menu-btn {
-    display: block;
-    color: inherit;
-    border-bottom: 1px solid;
-    padding: 0;
-    margin-bottom: 20px;
-  }
-}
-
-.header-menu {
-  display: none;
-}
 .header label {
   margin: 0 12px 12px auto;
   width: 89px;
@@ -95,9 +81,26 @@
 }
 
 .header input:checked + label::after {
-  left: 20px;
   transform: translateX(100%);
   background: linear-gradient(180deg, #ffcc89, #ffcc89);
+}
+
+@media screen and (min-width: 768px) {
+  .header input:checked + label::after {
+    left: 20px;
+  }
+
+  .menu-btn {
+    display: block;
+    color: inherit;
+    border-bottom: 1px solid;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.header-menu {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
