@@ -167,7 +167,7 @@
     padding-bottom: 82px;
   }
   .projects-card {
-    display: flex;
+    display: flex !important;
   }
   .projects-tags {
     border-radius: 24px 0 0 24px;
