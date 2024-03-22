@@ -22,6 +22,10 @@ function toggleHeaderMenu() {
 }
 menuBtn.addEventListener('click', toggleHeaderMenu);
 
+function closeHeaderMenu() {
+  headerMenu.classList.add('visually-hidden');
+}
+
 // smooth scroll
 const anchorsArray = Array.from(document.querySelectorAll('.header-menu-link'));
 anchorsArray.push(document.querySelector('.header-order'));
@@ -32,7 +36,7 @@ for (const anchor of anchorsArray) {
     wishedSection.scrollIntoView({
       behavior: 'smooth',
     });
-    toggleHeaderMenu();
+    closeHeaderMenu();
   });
 }
 
