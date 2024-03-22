@@ -54,62 +54,6 @@
   gap: 16px;
 }
 
-/* ==========MOBYLE STYLES======== */
-.order {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  background-repeat: no-repeat;
-  background-position: 20% 100%;
-  /* background-attachment: fixed; */
-  /* clip-path: margin-box; */
-}
-
-
-.title-container {
-  display: flex;
-  gap: 8px;
-  position: relative;
-}
-
-.order-image {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-}
-
-.order-title {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 100%;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  color: var(--white-text-color);
-}
-
-.text-order {
-  color: var(--accent-color);
-}
-
-.text-title {
-  position: absolute;
-  top: 48px;
-  left: 0;
-}
-
-.order-form {
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.field-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
 .email-field:valid,
 .email-field:hover:valid {
   border-bottom: 1px solid var(--succes-message-color);
@@ -247,14 +191,6 @@
   height: 37px;
 }
 
-@media screen and (min-resolution: 192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (max-width: 767px),
-screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-  .order {
-    background-image: url(../img/workTogether-img/elements-mob@2x.png);
-  }
-}
-
 .modal {
   background-color: var(--cards-background-color);
   border: 1px solid var(--modal-border-color);
@@ -315,7 +251,8 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
   .order {
     padding-top: 80px;
     padding-bottom: 80px;
-    background-image: url(../img/workTogether-img/elements-tablet.png);
+    background-position: 570px 100%;
+    width: 768px;
   }
 
   .title-container {
@@ -342,7 +279,6 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 
   .order-form {
     padding-top: 64px;
-    display: flex;
     flex-direction: row;
     gap: 32px;
     padding-bottom: 12px;
@@ -400,21 +336,14 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
   }
 }
 
-@media screen and (min-resolution: 192dpi) and (min-width: 768px),
-screen and (min-resolution: 2dppx) and (min-width: 768px),
-screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
-  .order {
-    background-image: url(../img/workTogether-img/elements-tablet@2x.png);
-  }
-}
-
 /* ==========TABLET STYLES======== */
 
 /* ==========DESKTOP STYLES======== */
 @media screen and (min-width: 1440px) {
   .order {
     padding-left: 196px;
-    background-image: url(../img/workTogether-img/elements-desktop.png);
+    background-position: 1140px 100%;
+    width: 1840px;
   }
 
   .text-title {
@@ -449,12 +378,5 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
   }
 }
 
-@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
-screen and (min-resolution: 2dppx) and (min-width: 1440px),
-screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
-  .order {
-    background-image: url(../img/workTogether-img/elements-desktop@2x.png);
-  }
-}
 
 /* ==========DESKTOP STYLES======== */
