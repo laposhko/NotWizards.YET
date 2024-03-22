@@ -69,7 +69,7 @@ section.hero-white {
 .hero-contacts {
   display: flex;
   gap: 0 4px;
-  width: 342px;
+  width: 100%;
 }
 
 .contacts-list {
@@ -110,6 +110,19 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
   section.hero-white {
     background-image: url(../img/hero/mob-wite@2x-min.png);
   }
+}
+
+@media screen and (max-width: 374px) {
+.hero-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  width: 100%;
+}
+
+.mail {
+  margin-top: 4px;
+}
 }
 
 @media screen and (min-width: 768px) {
