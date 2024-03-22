@@ -90,7 +90,7 @@
 
 .field {
   font-family: inherit;
-  width: 343px;
+  max-width: 343px;
   height: 44px;
   font-weight: 500;
   font-size: 16px;
@@ -377,6 +377,5 @@
     height: 246px;
   }
 }
-
 
 /* ==========DESKTOP STYLES======== */
