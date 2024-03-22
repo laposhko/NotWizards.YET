@@ -24,13 +24,13 @@ section.hero-white {
   line-height: 1;
   letter-spacing: -0.03em;
   color: var(--white-text-color);
-  width: 343px;
+  width: 100%;
 }
 
 .hero-contacts {
   display: flex;
   gap: 0 4px;
-  width: 342px;
+  width: 100%;
 }
 
 .contacts-list {
@@ -71,6 +71,19 @@ section.hero-white {
   section.hero-white {
     background-image: url(../img/hero/mob-wite@2x-min.png);
   }
+}
+
+@media screen and (max-width: 374px) {
+.hero-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  width: 100%;
+}
+
+.mail {
+  margin-top: 4px;
+}
 }
 
 @media screen and (min-width: 768px) {
