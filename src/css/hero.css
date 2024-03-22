@@ -63,7 +63,7 @@ section.hero-white {
   line-height: 1;
   letter-spacing: -0.03em;
   color: var(--white-text-color);
-  width: 343px;
+  width: 100%;
 }
 
 .hero-contacts {

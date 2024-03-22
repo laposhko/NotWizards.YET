@@ -94,10 +94,6 @@
   border-color: var(--button-border-color);
 }
 
-.reviews-btn:disabled .arrow-item {
-  stroke: var(--button-border-color);
-}
-
 .error-item {
   display: flex;
   flex-direction: column;
