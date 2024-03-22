@@ -6,7 +6,7 @@
 }
 
 .review-title {
-  color: #fafafa66;
+  color: var(--grey-title-color);
   font-weight: 600;
   text-transform: uppercase;
   line-height: 1.5;
@@ -27,7 +27,7 @@
 .review-item {
   width: 344px;
   min-height: 302px;
-  border: 1px solid #fafafa33;
+  border: 1px solid var(--button-border-color);
   border-radius: 20px;
   padding: 32px 24px;
 }
@@ -49,7 +49,7 @@
 }
 
 .review-author-text {
-  color: #fafafa99;
+  color: var(--grey-text-color);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: -0.02em;
@@ -72,7 +72,7 @@
   align-items: center;
   width: 52px;
   height: 52px;
-  border: 1px solid #fafafa80;
+  border: 1px solid var(--grey-title-color);
   padding: 14px;
   border-radius: 60%;
   cursor: pointer;
@@ -82,20 +82,20 @@
 .arrow-item {
   width: 24px;
   height: 24px;
-  stroke: #fafafa;
+  stroke: var(--white-text-color);
   transition: all 300ms ease-in;
 }
 
 .reviews-btn:hover {
-  border-color: #fafafa;
+  border-color: var(--white-text-color);
 }
 
 .reviews-btn:disabled {
-  border-color: #fafafa33;
+  border-color: var(--button-border-color);
 }
 
 .reviews-btn:disabled .arrow-item {
-  stroke: #fafafa33;
+  stroke: var(--button-border-color);
 }
 
 .error-item {
