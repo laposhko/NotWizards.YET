@@ -48,9 +48,13 @@
   color: var(--accent-color);
   scale: 1.2;
 }
+.header-block {
+  display: flex;
+  align-items: center;
+}
 .header label {
   margin: 0 12px 12px auto;
-  width: 89px;
+  width: 69px;
   height: 37px;
   display: block;
   position: relative;
@@ -86,6 +90,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .header label {
+    width: 89px;
+  }
   .header input:checked + label::after {
     left: 20px;
   }
