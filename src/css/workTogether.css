@@ -4,7 +4,7 @@
   padding-bottom: 32px;
   background-repeat: no-repeat;
   background-position: -79% 100%;
-  width: 375px;
+  /* width: 375px; */
   margin: 0 auto;
 }
 
@@ -166,7 +166,7 @@
 .adress-item {
   font-family: inherit;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 10px;
   letter-spacing: -0.02em;
   color: var(--white-text-color);
   border: 1px solid var(--button-border-color);
@@ -180,14 +180,19 @@
   scale: 1.05;
 }
 
-.mail-item {
-  width: 178px;
-  height: 37px;
-}
+@media screen and (min-width: 375px) {
+  .adress-item {
+    font-size: 14px;
+  }
+  .mail-item {
+    width: 178px;
+    height: 37px;
+  }
 
-.phone-item {
-  width: 122px;
-  height: 37px;
+  .phone-item {
+    width: 122px;
+    height: 37px;
+  }
 }
 
 .modal {
