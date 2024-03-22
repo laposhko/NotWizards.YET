@@ -15,6 +15,7 @@
   "author": "Alexandra Laposhko <laposhko0@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "@mojs/core": "^1.7.1",
     "accordion-js": "^3.3.4",
     "axios": "^1.6.8",
     "basiclightbox": "^5.0.4",
