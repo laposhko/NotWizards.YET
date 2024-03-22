@@ -1,4 +1,5 @@
 import './js/header';
+import './js/lightTheme';
 import './js/about';
 import './js/benefits';
 import './js/reviews';
