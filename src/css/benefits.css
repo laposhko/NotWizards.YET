@@ -22,8 +22,8 @@
 
 .benefits-item {
   border-radius: 20px;
-  width: 343px;
-  height: 270px;
+  max-width: 343px;
+  max-height: 270px;
   background-color: var(--cards-background-color);
   margin-bottom: 16px;
   padding: 24px;
