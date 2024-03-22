@@ -16,7 +16,7 @@
     <script type="module" crossorigin src="/NotWizards.YET/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/NotWizards.YET/assets/vendor-2e075fbd.js">
     <link rel="stylesheet" href="/NotWizards.YET/assets/vendor-c6903f92.css">
-    <link rel="stylesheet" href="/NotWizards.YET/assets/index-f6cd098d.css">
+    <link rel="stylesheet" href="/NotWizards.YET/assets/index-9eacc122.css">
   </head>
 
   <body>
@@ -55,16 +55,19 @@
         </li>
       </ul>
     </nav>
-    <!-- order button -->
-    <input type="checkbox" id="switch-theme" />
-    <label for="switch-theme"></label>
-    <a href="order" class="header-order">Order the Project</a>
-    <!-- mob menu btn -->
-    <button class="header-btn" aria-label="mobileMenuOpen">
-      <svg class="header-btn-icon" width="28px" height="28px">
-        <use href="/NotWizards.YET/assets/symbol-defs-a3a32346.svg#icon-mobile-menu-burger"></use>
-      </svg>
-    </button>
+    <div class="header-block">
+      <!-- theme switcher -->
+      <input type="checkbox" id="switch-theme" />
+      <label for="switch-theme"></label>
+      <!-- order button -->
+      <a href="order" class="header-order">Order the Project</a>
+      <!-- mob menu btn -->
+      <button class="header-btn" aria-label="mobileMenuOpen">
+        <svg class="header-btn-icon" width="28px" height="28px">
+          <use href="/NotWizards.YET/assets/symbol-defs-a3a32346.svg#icon-mobile-menu-burger"></use>
+        </svg>
+      </button>
+    </div>
   </div>
   <!-- mob menu -->
   <div class="backdrop change">
