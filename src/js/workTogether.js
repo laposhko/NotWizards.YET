@@ -100,7 +100,14 @@ const addNewUser = async event => {
     textInvalid.classList.add('is-hidden');
   }
 };
+
 form.addEventListener('submit', addNewUser);
+
+document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      inst.close();
+  }
+});
 
 // ОБРІЗАТИ ТЕКСТ
 function truncateText(commentInput) {
